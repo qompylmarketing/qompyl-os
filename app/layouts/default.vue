@@ -40,6 +40,12 @@
           <div class="nav-status-dot dot-green"></div>
         </NuxtLink>
 
+        <NuxtLink to="/leads" class="nav-item" :class="{ active: $route.path === '/leads' }">
+          <Icon name="user-check" :size="18" />
+          <span class="nav-label">Early Access Leads</span>
+          <div class="nav-status-dot dot-green"></div>
+        </NuxtLink>
+
         <!-- Workspace Section -->
         <div class="nav-section-label">Workspace</div>
         
