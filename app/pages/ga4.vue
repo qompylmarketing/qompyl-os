@@ -150,10 +150,11 @@
              <span class="funnel-rate">{{ data.funnel.rateLead }}%</span>
              <span class="funnel-arrow">→</span>
           </div>
-          <div class="funnel-step highlight-step">
+          <!-- 🚀 الرابط الذكي لصفحة Leads -->
+          <NuxtLink to="/leads" class="funnel-step highlight-step clickable-funnel-step">
             <div class="step-value">{{ data.funnel.leads }}</div>
-            <div class="step-label">generate_lead</div>
-          </div>
+            <div class="step-label">generate_lead <Icon name="external-link" :size="10" class="link-icon"/></div>
+          </NuxtLink>
         </div>
       </div>
 
@@ -393,7 +394,31 @@ onUnmounted(() => { document.removeEventListener('click', handleClickOutside) })
 .badge { padding: 4px 10px; border-radius: 100px; font-size: 11px; font-weight: 600; background: rgba(0, 217, 207, 0.1); color: var(--teal-normal); border: 1px solid rgba(0, 217, 207, 0.15); }
 .badge.muted { background: transparent; color: var(--text-tertiary); border: 1px solid var(--border-subtle); }
 .table-container { height: 100%; }
+/* 🚀 تخصيص الكارت القابل للضغط */
+.clickable-funnel-step {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
 
+/* تأثير التوهج عند التحويم */
+.clickable-funnel-step:hover {
+  background: rgba(0, 217, 207, 0.1);
+  border-color: rgba(0, 217, 207, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 217, 207, 0.15);
+}
+
+.step-label .link-icon {
+  margin-left: 2px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.clickable-funnel-step:hover .link-icon {
+  opacity: 1;
+}
 @media (max-width: 900px) {
   .funnel-container { flex-direction: column; gap: 10px; }
   .funnel-connector { flex-direction: row; gap: 10px; margin: 4px 0; }
