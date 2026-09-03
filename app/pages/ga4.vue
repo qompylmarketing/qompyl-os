@@ -5,7 +5,7 @@
       <div class="brand-title">
         <h1><Icon name="line-chart" :size="24" style="color: var(--teal-normal);" /> Growth & Conversion</h1>
         <p>{{ periodLabel }}</p>
-        <div class="last-updated">
+        <div class="last-updated" :style="{ color: loading ? 'var(--text-tertiary)' : 'var(--green-normal)' }">
            <Icon name="refresh-ccw" :size="13" :class="{ 'is-spinning': loading }" /> GA4 API sync: {{ loading ? 'Syncing...' : 'Just now' }}
         </div>
       </div>
