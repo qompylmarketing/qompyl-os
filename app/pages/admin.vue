@@ -54,7 +54,7 @@
                 <td>
                   <div class="action-cell">
                     <button class="edit-btn" @click="openModal(item)" title="Edit"><Icon name="edit-2" :size="14"/></button>
-                    <button class="del-row-btn" @click="deleteRecord(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
+                    <button class="del-row-btn" @click="confirmDelete(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
                   </div>
                 </td>
               </tr>
@@ -72,7 +72,7 @@
                 <td>
                   <div class="action-cell">
                     <button class="edit-btn" @click="openModal(item)" title="Edit"><Icon name="edit-2" :size="14"/></button>
-                    <button class="del-row-btn" @click="deleteRecord(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
+                    <button class="del-row-btn" @click="confirmDelete(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
                   </div>
                 </td>
               </tr>
@@ -93,7 +93,7 @@
                 <td>
                   <div class="action-cell">
                     <button class="edit-btn" @click="openModal(item)" title="Edit"><Icon name="edit-2" :size="14"/></button>
-                    <button class="del-row-btn" @click="deleteRecord(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
+                    <button class="del-row-btn" @click="confirmDelete(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
                   </div>
                 </td>
               </tr>
@@ -112,7 +112,7 @@
                 <td>
                   <div class="action-cell">
                     <button class="edit-btn" @click="openModal(item)" title="Edit"><Icon name="edit-2" :size="14"/></button>
-                    <button class="del-row-btn" @click="deleteRecord(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
+                    <button class="del-row-btn" @click="confirmDelete(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
                   </div>
                 </td>
               </tr>
@@ -125,7 +125,6 @@
             <tbody>
               <tr v-for="item in tableData" :key="item.id">
                 <td style="color:#fff; font-size: 11.5px; font-family:var(--font-mono); max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" :title="item.message">
-                  <!-- Vue's {{ }} provides automatic XSS protection here -->
                   {{ item.message }}
                 </td>
                 <td><span class="badge" :class="item.priority === 'High' ? 'badge-open' : (item.priority === 'Medium' ? 'badge-progress' : 'badge-muted')">{{ item.priority }}</span></td>
@@ -134,7 +133,7 @@
                 <td>
                   <div class="action-cell">
                     <button class="edit-btn" @click="openModal(item)" title="Edit"><Icon name="edit-2" :size="14"/></button>
-                    <button class="del-row-btn" @click="deleteRecord(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
+                    <button class="del-row-btn" @click="confirmDelete(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
                   </div>
                 </td>
               </tr>
@@ -152,7 +151,7 @@
                 <td>
                   <div class="action-cell">
                     <button class="edit-btn" @click="openModal(item)" title="Edit"><Icon name="edit-2" :size="14"/></button>
-                    <button class="del-row-btn" @click="deleteRecord(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
+                    <button class="del-row-btn" @click="confirmDelete(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
                   </div>
                 </td>
               </tr>
@@ -180,7 +179,7 @@
                 <td>
                   <div class="action-cell">
                     <button class="edit-btn" @click="openModal(item)" title="Edit"><Icon name="edit-2" :size="14"/></button>
-                    <button class="del-row-btn" @click="deleteRecord(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
+                    <button class="del-row-btn" @click="confirmDelete(item.id)" title="Delete"><Icon name="trash-2" :size="14"/></button>
                   </div>
                 </td>
               </tr>
@@ -301,7 +300,6 @@
             <template v-if="activeTab === 'js_errors'">
               <div class="form-group">
                 <label>Error Message</label>
-                <!-- هنا سيتم إدخال النص الخبيث الوهمي للاختبار -->
                 <textarea v-model="formData.message" rows="3" placeholder="Uncaught TypeError..." required></textarea>
               </div>
               <div class="form-row">
@@ -415,6 +413,21 @@
       </div>
     </div>
 
+    <!-- 🚀 Custom Delete Confirmation Modal -->
+    <div class="delete-modal-overlay" :class="{ 'is-open': isDeleteModalOpen }" @click.self="cancelDelete">
+      <div class="delete-modal bento-card">
+        <div class="delete-icon-wrapper">
+          <Icon name="alert-triangle" :size="24" style="color: #F87171;" />
+        </div>
+        <h3>Delete Record?</h3>
+        <p>This action cannot be undone. This will permanently delete this record from the database.</p>
+        <div class="delete-actions">
+          <button class="action-btn secondary" @click="cancelDelete">Cancel</button>
+          <button class="action-btn danger" @click="executeDelete">Yes, Delete</button>
+        </div>
+      </div>
+    </div>
+
     <!-- 🚀 Toast Notifications Container -->
     <div class="toast-container">
       <transition-group name="toast-slide">
@@ -446,6 +459,10 @@ const isModalOpen = ref(false)
 const editingId = ref(null)
 const formData = ref({})
 const openSelect = ref(null)
+
+// 🚀 Delete Modal State
+const isDeleteModalOpen = ref(false)
+const deletingId = ref(null)
 
 // 🚀 Toast Management System
 const toasts = ref([])
@@ -585,12 +602,18 @@ const saveData = async () => {
   }
 }
 
-const deleteRecord = async (id) => {
-  if (!confirm('Are you sure you want to delete this record? This action cannot be undone.')) return
+// 🚀 New Delete Handlers
+const confirmDelete = (id) => {
+  deletingId.value = id
+  isDeleteModalOpen.value = true
+}
+
+const executeDelete = async () => {
+  if (!deletingId.value) return
   
   try {
     const table = currentTabConfig.value.table
-    const { error } = await supabase.from(table).delete().eq('id', id)
+    const { error } = await supabase.from(table).delete().eq('id', deletingId.value)
     
     if (error) throw error
     
@@ -600,7 +623,15 @@ const deleteRecord = async (id) => {
   } catch (error) {
     console.error('Error deleting record:', error)
     showToast('Delete Failed', error.message, 'error')
+  } finally {
+    isDeleteModalOpen.value = false
+    deletingId.value = null
   }
+}
+
+const cancelDelete = () => {
+  isDeleteModalOpen.value = false
+  deletingId.value = null
 }
 
 const toggleSelect = (selectId) => {
@@ -748,6 +779,37 @@ input:focus, textarea:focus { border-color: var(--teal-normal); }
 .action-btn.primary:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0, 217, 207, 0.3); }
 .action-btn.secondary { background: transparent; border: 1px solid var(--border-subtle); color: var(--text-secondary); }
 .action-btn.secondary:hover { background: rgba(255,255,255,0.05); color: #fff; }
+
+/* 🚀 Custom Delete Modal Styles */
+.delete-modal-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);
+  z-index: 1000; opacity: 0; visibility: hidden; transition: all 0.3s ease;
+  display: flex; align-items: center; justify-content: center;
+}
+.delete-modal-overlay.is-open { opacity: 1; visibility: visible; }
+
+.delete-modal {
+  width: 100%; max-width: 400px; padding: 32px; text-align: center;
+  transform: scale(0.95) translateY(10px); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex; flex-direction: column; align-items: center; gap: 16px;
+  background: rgba(17, 22, 31, 0.98);
+  height: auto;
+}
+.delete-modal-overlay.is-open .delete-modal { transform: scale(1) translateY(0); }
+
+.delete-icon-wrapper {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: rgba(248, 113, 113, 0.1); border: 1px solid rgba(248, 113, 113, 0.2);
+  display: flex; align-items: center; justify-content: center; margin-bottom: 8px;
+}
+.delete-modal h3 { margin: 0; color: #fff; font-size: 20px; font-weight: 600; }
+.delete-modal p { margin: 0; color: var(--text-secondary); font-size: 14px; line-height: 1.6; }
+
+.delete-actions { display: flex; gap: 12px; width: 100%; margin-top: 16px; }
+.delete-actions .action-btn { flex: 1; justify-content: center; }
+
+.action-btn.danger { background: #F87171; color: #000; }
+.action-btn.danger:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(248, 113, 113, 0.3); background: #fca5a5; }
 
 /* 🚀 Toast Notifications Styles */
 .toast-container {
