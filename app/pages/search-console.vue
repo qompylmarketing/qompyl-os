@@ -3,7 +3,7 @@
     <!-- Header -->
     <header class="header">
       <div class="brand-title">
-        <h1>Search Console Overview</h1>
+        <h1> <Icon name="folder-search" :size="24" style="color: var(--teal-normal);" /> Search Console Overview</h1>
         <p>{{ periodLabel }}</p>
         <div class="system-status" style="margin-top: 8px;">
            <Icon name="refresh-ccw" :size="13" :class="{ 'is-spinning': loading }" style="color: var(--text-tertiary);" />
