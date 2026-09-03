@@ -1,0 +1,845 @@
+{
+  "container": {
+    "path": "accounts/6372324277/containers/261739986",
+    "accountId": "6372324277",
+    "containerId": "261739986",
+    "name": "qompyl.com",
+    "publicId": "GTM-ND4344C8",
+    "usageContext": [
+      "web"
+    ],
+    "fingerprint": "1787167980920",
+    "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6372324277/containers/261739986/workspaces?apiLink=container",
+    "features": {
+      "supportUserPermissions": true,
+      "supportEnvironments": true,
+      "supportWorkspaces": true,
+      "supportGtagConfigs": false,
+      "supportBuiltInVariables": true,
+      "supportClients": false,
+      "supportFolders": true,
+      "supportTags": true,
+      "supportTemplates": true,
+      "supportTriggers": true,
+      "supportVariables": true,
+      "supportVersions": true,
+      "supportZones": true,
+      "supportTransformations": false
+    },
+    "tagIds": [
+      "GTM-ND4344C8"
+    ]
+  },
+  "versionInfo": {
+    "versionId": "9",
+    "name": "Version 9",
+    "fingerprint": "1787332907723",
+    "description": "No description provided"
+  },
+  "tags": [
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "tagId": "4",
+      "name": "GA4 - Main Tag",
+      "type": "googtag",
+      "parameter": [
+        {
+          "type": "template",
+          "key": "tagId",
+          "value": "G-ZQL20PHG80"
+        }
+      ],
+      "fingerprint": "1787168561671",
+      "firingTriggerId": [
+        "2147479573"
+      ],
+      "tagFiringOption": "oncePerEvent",
+      "monitoringMetadata": {
+        "type": "map"
+      },
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "tagId": "11",
+      "name": "GA4 | Event | generate_lead",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "false"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "experience_level"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - Experience Level}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "age_range"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - Age Range}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "country"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - Country}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "strategies"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - Strategies}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "generate_lead"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-ZQL20PHG80"
+        }
+      ],
+      "fingerprint": "1787172389901",
+      "firingTriggerId": [
+        "12"
+      ],
+      "tagFiringOption": "oncePerEvent",
+      "monitoringMetadata": {
+        "type": "map"
+      },
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "tagId": "13",
+      "name": "Microsoft Clarity",
+      "type": "html",
+      "parameter": [
+        {
+          "type": "template",
+          "key": "html",
+          "value": "<script type=\"text/javascript\">\n(function(c,l,a,r,i,t,y){\n    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};\n    t=l.createElement(r);\n    t.async=1;\n    t.src=\"https://www.clarity.ms/tag/\"+i;\n    y=l.getElementsByTagName(r)[0];\n    y.parentNode.insertBefore(t,y);\n})(window, document, \"clarity\", \"script\", \"y4z2qt9rzo\");\n</script>"
+        },
+        {
+          "type": "boolean",
+          "key": "supportDocumentWrite",
+          "value": "false"
+        }
+      ],
+      "fingerprint": "1787248195295",
+      "firingTriggerId": [
+        "2147479573"
+      ],
+      "tagFiringOption": "oncePerEvent",
+      "monitoringMetadata": {
+        "type": "map"
+      },
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "tagId": "15",
+      "name": "GA4 | Event | cta_click",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "false"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "cta_name"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "Join Early Access"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "cta_location"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{Page URL}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "cta_click"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-ZQL20PHG80"
+        }
+      ],
+      "fingerprint": "1787329335362",
+      "firingTriggerId": [
+        "14"
+      ],
+      "tagFiringOption": "oncePerEvent",
+      "monitoringMetadata": {
+        "type": "map"
+      },
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "tagId": "17",
+      "name": "GA4 | Event | careers_apply_click",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "false"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "button_name"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "View Open Positions"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "button_location"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{Page URL}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "careers_apply_click"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-ZQL20PHG80"
+        }
+      ],
+      "fingerprint": "1787329733708",
+      "firingTriggerId": [
+        "16"
+      ],
+      "tagFiringOption": "oncePerEvent",
+      "monitoringMetadata": {
+        "type": "map"
+      },
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "tagId": "19",
+      "name": "GA4 | Event | social_click",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "false"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "social_platform"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{Click Text}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "social_url"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{Click URL}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "social_click"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-ZQL20PHG80"
+        }
+      ],
+      "fingerprint": "1787329881159",
+      "firingTriggerId": [
+        "18"
+      ],
+      "tagFiringOption": "oncePerEvent",
+      "monitoringMetadata": {
+        "type": "map"
+      },
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "tagId": "21",
+      "name": "GA4 | Event | scroll_depth",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "false"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "percent_scrolled"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{Scroll Depth Threshold}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "page_location"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{Page URL}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "scroll_depth"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-ZQL20PHG80"
+        }
+      ],
+      "fingerprint": "1787332895732",
+      "firingTriggerId": [
+        "20"
+      ],
+      "tagFiringOption": "oncePerEvent",
+      "monitoringMetadata": {
+        "type": "map"
+      },
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "triggerId": "6",
+      "name": "TR | Form Submit | Early Access",
+      "type": "formSubmission",
+      "filter": [
+        {
+          "type": "contains",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{Form ID}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "Early-Access-Form"
+            }
+          ]
+        },
+        {
+          "type": "contains",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{Page Path}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "thank-you"
+            }
+          ]
+        }
+      ],
+      "waitForTags": {
+        "type": "template"
+      },
+      "checkValidation": {
+        "type": "template"
+      },
+      "waitForTagsTimeout": {
+        "type": "template",
+        "value": "2000"
+      },
+      "uniqueTriggerId": {
+        "type": "template"
+      },
+      "fingerprint": "1787171073352"
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "triggerId": "12",
+      "name": "TR | Page View | Thank You",
+      "type": "pageview",
+      "filter": [
+        {
+          "type": "contains",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{Page Path}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "thank-you"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1787172369247"
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "triggerId": "14",
+      "name": "TR | Click | Join Early Access",
+      "type": "click",
+      "filter": [
+        {
+          "type": "contains",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{Click URL}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "/early-access"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1787328675170"
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "triggerId": "16",
+      "name": "TR | Click | View Open Positions",
+      "type": "click",
+      "filter": [
+        {
+          "type": "contains",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{Click Text}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "View Open Positions"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1787329552851"
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "triggerId": "18",
+      "name": "TR | Click | Social Icon",
+      "type": "click",
+      "filter": [
+        {
+          "type": "contains",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{Click URL}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "linkedin.com"
+            }
+          ]
+        },
+        {
+          "type": "contains",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{Click URL}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "x.com"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1787329804868"
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "triggerId": "20",
+      "name": "TR | Scroll Depth",
+      "type": "scrollDepth",
+      "fingerprint": "1787332803807",
+      "parameter": [
+        {
+          "type": "template",
+          "key": "verticalThresholdUnits",
+          "value": "PERCENT"
+        },
+        {
+          "type": "template",
+          "key": "verticalThresholdsPercent",
+          "value": "25, 50, 75, 100"
+        },
+        {
+          "type": "boolean",
+          "key": "verticalThresholdOn",
+          "value": "true"
+        },
+        {
+          "type": "template",
+          "key": "triggerStartOption",
+          "value": "WINDOW_LOAD"
+        },
+        {
+          "type": "boolean",
+          "key": "horizontalThresholdOn",
+          "value": "false"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "variableId": "5",
+      "name": "Page Title",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "boolean",
+          "key": "setDefaultValue",
+          "value": "false"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "page.title"
+        }
+      ],
+      "fingerprint": "1787170854202",
+      "formatValue": {}
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "variableId": "7",
+      "name": "DL - Experience Level",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "boolean",
+          "key": "setDefaultValue",
+          "value": "false"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "DL - Experience Level"
+        }
+      ],
+      "fingerprint": "1787257830861",
+      "formatValue": {}
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "variableId": "8",
+      "name": "DL - Age Range",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "boolean",
+          "key": "setDefaultValue",
+          "value": "false"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "DL - Age Range"
+        }
+      ],
+      "fingerprint": "1787258008290",
+      "formatValue": {}
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "variableId": "9",
+      "name": "DL - Country",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "boolean",
+          "key": "setDefaultValue",
+          "value": "false"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "DL - Country"
+        }
+      ],
+      "fingerprint": "1787257982427",
+      "formatValue": {}
+    },
+    {
+      "accountId": "6372324277",
+      "containerId": "261739986",
+      "variableId": "10",
+      "name": "DL - Strategies",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "boolean",
+          "key": "setDefaultValue",
+          "value": "false"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "DL - Strategies"
+        }
+      ],
+      "fingerprint": "1787257963003",
+      "formatValue": {}
+    }
+  ],
+  "history": [
+    {
+      "versionId": "1",
+      "name": "Empty Container",
+      "description": "-"
+    },
+    {
+      "versionId": "2",
+      "name": "v2",
+      "description": "-"
+    },
+    {
+      "versionId": "3",
+      "name": "v3",
+      "description": "-"
+    },
+    {
+      "versionId": "4",
+      "name": "v4",
+      "description": "-"
+    },
+    {
+      "versionId": "5",
+      "name": "v5",
+      "description": "-"
+    }
+  ]
+}

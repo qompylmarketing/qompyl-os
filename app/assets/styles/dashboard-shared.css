@@ -1,0 +1,63 @@
+/* app/assets/css/dashboard-shared.css */
+
+/* Loading State */
+.loading-state { display: flex; justify-content: center; align-items: center; min-height: 200px; }
+
+/* Animations for dropdown chevron */
+.chevron { transition: transform 0.3s ease; }
+.chevron.open { transform: rotate(180deg); }
+
+/* Dropdown Filters */
+.filter-dropdown { position: relative; display: inline-block; }
+.dropdown-menu { position: absolute; top: calc(100% + 6px); left: 0; min-width: 200px; background: rgba(17, 22, 31, 0.96); backdrop-filter: blur(24px); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 8px 4px; box-shadow: var(--shadow-hover); opacity: 0; visibility: hidden; transform: translateY(-8px) scale(0.98); transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 100; max-height: 260px; overflow-y: auto; }
+.dropdown-menu.open { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
+.menu-label { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-tertiary); padding: 6px 12px 4px; }
+
+.checkbox-item { display: flex; align-items: center; gap: 10px; padding: 7px 12px; border-radius: var(--radius-sm); cursor: pointer; transition: all 0.2s ease; color: var(--text-secondary); font-size: 13px; font-weight: 400; }
+.checkbox-item:hover { background: rgba(255, 255, 255, 0.04); color: #fff; }
+.checkbox-item .custom-check { width: 18px; height: 18px; border-radius: 4px; border: 1.5px solid var(--border-subtle); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.2s ease; background: transparent; }
+.checkbox-item .custom-check svg { width: 12px; height: 12px; opacity: 0; transform: scale(0.6); transition: all 0.2s ease; color: #fff; }
+.checkbox-item.checked .custom-check { background: var(--teal-normal); border-color: var(--teal-normal); box-shadow: 0 0 20px rgba(0, 217, 207, 0.2); }
+.checkbox-item.checked .custom-check svg { opacity: 1; transform: scale(1); }
+.checkbox-item.checked .item-label { color: #fff; }
+
+/* Bento Grid */
+.bento-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
+.bento-card { height: 100%; background: var(--bg-card); backdrop-filter: blur(16px); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 24px 28px; display: flex; flex-direction: column; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; }
+.bento-card::before { content: ''; position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), transparent 60%); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; }
+.bento-card:hover { border-color: var(--border-hover); transform: translateY(-4px); box-shadow: var(--shadow-hover), var(--shadow-glow); background: rgba(255, 255, 255, 0.04); }
+
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-6 { grid-column: span 6; }
+.col-8 { grid-column: span 8; }
+.col-12 { grid-column: span 12; }
+
+/* Scorecards */
+.scorecard { padding: 22px 24px; justify-content: space-between; background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.005)); }
+.scorecard .score-title { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-tertiary); margin-bottom: 12px; display: block; }
+.scorecard .score-main { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.scorecard .score-value { font-size: 34px; font-weight: 700; font-family: var(--font-mono); letter-spacing: -0.5px; line-height: 1; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+/* Tables */
+.table-container { overflow-x: auto; padding: 20px 24px 24px; }
+.card-header { margin-bottom: 20px; }
+.card-title { font-size: 15px; font-weight: 600; display: flex; align-items: center; gap: 8px; margin: 0 0 4px 0; letter-spacing: -0.2px; color: var(--text-primary); }
+.card-desc { font-size: 12.5px; color: var(--text-tertiary); line-height: 1.5; margin: 0; }
+table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }
+th { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-tertiary); padding: 12px 12px 10px; border-bottom: 1px solid var(--border-subtle); }
+td { padding: 12px 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.02); color: var(--text-secondary); font-weight: 400; }
+tr:hover td { background: rgba(255, 255, 255, 0.02); }
+.num-col { text-align: right; font-family: var(--font-mono); font-size: 12.5px; }
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) { .col-3 { grid-column: span 6; } }
+@media (max-width: 900px) { 
+  .col-3, .col-4, .col-6, .col-8 { grid-column: span 12; } 
+  .filters-group { flex-wrap: wrap; } 
+  .filter-dropdown .filter-trigger { font-size: 11px; padding: 6px 12px; min-height: 32px; } 
+}
+@media (max-width: 480px) { 
+  .bento-card { padding: 14px 16px; border-radius: var(--radius-md); } 
+  .scorecard .score-value { font-size: 24px; } 
+}

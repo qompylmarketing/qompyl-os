@@ -1,0 +1,19 @@
+{
+  "is_live_data": true,
+  "reports": {
+    "1": {
+      "sessions": 53,
+      "rageClicks": 0,
+      "deadClicks": 0,
+      "quickBacks": 8
+    },
+    "3": {
+      "sessions": 88,
+      "rageClicks": 0,
+      "deadClicks": 0,
+      "quickBacks": 18
+    }
+  },
+  "frictionLog": [],
+  "jsErrors": []
+}
