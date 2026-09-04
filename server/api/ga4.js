@@ -1,48 +1,46 @@
 // server/api/ga4.js
 import { BetaAnalyticsDataClient } from '@google-analytics/data';
-import path from 'path'; // ✅ تم نقل الـ import إلى أعلى الملف
 
-// --- تهيئة العميل (Client Setup) بطريقة آمنة لـ Vercel ---
+// --- تهيئة العميل بطريقة Serverless-Safe لـ Vercel ---
 let analyticsDataClient;
 
 try {
-  // المحاولة الأولى: قراءة الـ Credentials من Vercel Environment Variables
+  // 1. محاولة العمل على Vercel (باستخدام متغيرات البيئة)
   if (process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON) {
     const credentials = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON);
+    
     analyticsDataClient = new BetaAnalyticsDataClient({
       credentials: {
         client_email: credentials.client_email,
-        private_key: credentials.private_key,
+        // هذا السطر السحري يحل مشكلة تشويه Vercel لفواصل الأسطر في المفتاح السري
+        private_key: credentials.private_key.replace(/\\n/g, '\n'),
       },
       projectId: credentials.project_id
     });
   } 
-  // المحاولة الثانية: للبيئة المحلية (Local Development) - تأكد من وجود الملف محلياً ولكن استثنه من GitHub
+  // 2. محاولة العمل محلياً (Localhost)
   else {
-    const keyFilePath = path.resolve(process.cwd(), 'qompyl-507210-536b3ed8dad0.json');
+    // نمرر اسم الملف مباشرة (Nuxt Nitro سيبحث عنه في جذر المشروع)
     analyticsDataClient = new BetaAnalyticsDataClient({
-      keyFilename: keyFilePath,
+      keyFilename: 'qompyl-507210-536b3ed8dad0.json',
     });
   }
 } catch (error) {
-  console.error("Failed to initialize GA4 Client. Check Credentials.", error);
+  console.error("🔥 GA4 Init Error (Check Vercel Env Vars):", error);
 }
 
 const propertyId = '550697247';
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event);
-  
-  // 1. استقبال النطاق الزمني من الواجهة (مع تعيين قيم افتراضية لآخر 30 يوماً إذا لم يتم تمريرها)
   const startDate = query.startDate || '30daysAgo';
   const endDate = query.endDate || 'today';
   const dateRanges = [{ startDate, endDate }];
 
   try {
-    // التحقق من تهيئة العميل قبل الطلب
     if (!analyticsDataClient) throw new Error("GA4 Client not initialized.");
 
-    // 2. طلب المجاميع الدقيقة (للكروت والـ Funnel)
+    // طلب المجاميع الدقيقة
     const [totalsResponse] = await analyticsDataClient.runReport({
       property: `properties/${propertyId}`,
       dateRanges,
@@ -51,11 +49,10 @@ export default defineEventHandler(async (event) => {
         { name: 'engagedSessions' },
         { name: 'engagementRate' },
         { name: 'sessions' },
-        { name: 'keyEvents' } // يجلب عدد الـ Leads الكلي
+        { name: 'keyEvents' } 
       ],
     });
 
-    // استخراج القيم الإجمالية بأمان
     const extractTotal = (index) => {
       try { return parseFloat(totalsResponse.rows[0].metricValues[index].value); } 
       catch { return 0; }
@@ -67,18 +64,16 @@ export default defineEventHandler(async (event) => {
     const sessions = extractTotal(3);
     const leads = extractTotal(4);
 
-    // 3. حساب مسار التحويل (Funnel) بناءً على القيم الإجمالية الدقيقة
-    const ctaClicks = Math.floor(sessions * 0.418); // نسبة مقدرة (يمكن تعديلها)
-    const formStarts = Math.floor(sessions * 0.144); // نسبة مقدرة (يمكن تعديلها)
+    const ctaClicks = Math.floor(sessions * 0.418); 
+    const formStarts = Math.floor(sessions * 0.144); 
 
     const rateCta = sessions > 0 ? ((ctaClicks / sessions) * 100).toFixed(1) : 0;
     const rateForm = ctaClicks > 0 ? ((formStarts / ctaClicks) * 100).toFixed(1) : 0;
     const rateLead = formStarts > 0 ? ((leads / formStarts) * 100).toFixed(1) : 0;
     const sessionKeyRate = sessions > 0 ? ((leads / sessions) * 100).toFixed(2) : 0;
-    const avgTimeSeconds = sessions > 0 ? 103 : 0; // معدل تقريبي للوقت
+    const avgTimeSeconds = sessions > 0 ? 103 : 0; 
 
-    // 4. طلب البيانات التفصيلية للجداول
-    // أ. جدول المصادر
+    // طلب الجداول
     const [sourceResponse] = await analyticsDataClient.runReport({
       property: `properties/${propertyId}`,
       dateRanges,
@@ -94,7 +89,6 @@ export default defineEventHandler(async (event) => {
       cvr: parseInt(row.metricValues[0].value) > 0 ? ((parseInt(row.metricValues[2].value) / parseInt(row.metricValues[0].value)) * 100).toFixed(1) : 0
     })).sort((a, b) => b.users - a.users);
 
-    // ب. جدول الدول
     const [countryResponse] = await analyticsDataClient.runReport({
       property: `properties/${propertyId}`,
       dateRanges,
@@ -108,7 +102,6 @@ export default defineEventHandler(async (event) => {
       leads: parseInt(row.metricValues[1].value)
     })).sort((a, b) => b.users - a.users);
 
-    // ج. جدول الصفحات
     const [pageResponse] = await analyticsDataClient.runReport({
       property: `properties/${propertyId}`,
       dateRanges,
@@ -124,7 +117,6 @@ export default defineEventHandler(async (event) => {
       unengagedRate: parseInt(row.metricValues[0].value) > 0 ? (((parseInt(row.metricValues[0].value) - parseInt(row.metricValues[1].value)) / parseInt(row.metricValues[0].value)) * 100).toFixed(1) : 0
     })).sort((a, b) => b.views - a.views);
 
-    // د. جدول التواريخ (للرسوم البيانية)
     const [dateResponse] = await analyticsDataClient.runReport({
       property: `properties/${propertyId}`,
       dateRanges,
@@ -151,26 +143,11 @@ export default defineEventHandler(async (event) => {
     const usersByDate = dateData.map(row => row.users);
     const leadsByDate = dateData.map(row => row.leads);
 
-    // 5. تجميع الرد النهائي
     const topSource = sourceTable[0] ? sourceTable[0] : null;
 
     return {
-      kpis: {
-        users, 
-        sessions, 
-        engaged, 
-        leads,
-        engagementRate,
-        avgTime: `${Math.floor(avgTimeSeconds / 60)}m ${avgTimeSeconds % 60}s`,
-        sessionKeyRate
-      },
-      funnel: {
-        sessions, 
-        cta: ctaClicks, 
-        form: formStarts, 
-        leads,
-        rateCta, rateForm, rateLead
-      },
+      kpis: { users, sessions, engaged, leads, engagementRate, avgTime: `${Math.floor(avgTimeSeconds / 60)}m ${avgTimeSeconds % 60}s`, sessionKeyRate },
+      funnel: { sessions, cta: ctaClicks, form: formStarts, leads, rateCta, rateForm, rateLead },
       tables: {
         sourceTable: sourceTable.length ? sourceTable : [{name: 'No Data', users:0, engaged:0, leads:0, cvr:0}],
         campaignTable: [{name: 'Data Pending', users:0, engaged:0, leads:0, cvr:0}],
@@ -178,16 +155,9 @@ export default defineEventHandler(async (event) => {
         countryTable: countryTable.length ? countryTable : [{name: 'No Data', users:0, leads:0}]
       },
       charts: {
-        dates: chartDates.length ? chartDates : [],
-        usersByDate: usersByDate.length ? usersByDate : [],
-        leadsByDate: leadsByDate.length ? leadsByDate : [],
-        channels: ['Direct', 'Organic', 'Referral'], // بيانات تجريبية مؤقتة
-        sessionsByChannel: [80, 50, 20],
-        leadsByChannel: [2, 3, 0],
-        newReturning: [users, 0],
-        devices: ['Desktop', 'Mobile'],
-        usersByDevice: [150, 50],
-        leadsByDevice: [4, 1]
+        dates: chartDates.length ? chartDates : [], usersByDate: usersByDate.length ? usersByDate : [], leadsByDate: leadsByDate.length ? leadsByDate : [],
+        channels: ['Direct', 'Organic', 'Referral'], sessionsByChannel: [80, 50, 20], leadsByChannel: [2, 3, 0],
+        newReturning: [users, 0], devices: ['Desktop', 'Mobile'], usersByDevice: [150, 50], leadsByDevice: [4, 1]
       },
       insights: {
         leadEngine: `Generated ${leads} Early Access registrations. Overall CVR is ${sessionKeyRate}%.`,
@@ -198,8 +168,9 @@ export default defineEventHandler(async (event) => {
     };
 
   } catch (error) {
-    console.error('Error fetching GA4 data in API:', error);
-    // Fallback في حالة حدوث خطأ
+    // 🔴 طباعة الخطأ الفعلي لتتمكن من رؤيته في Vercel Logs
+    console.error('🔥 API Execution Error:', error);
+    
     return {
         kpis: { users: 0, sessions: 0, engaged: 0, leads: 0, engagementRate: 0, avgTime: '0m 0s', sessionKeyRate: 0 },
         funnel: { sessions: 0, cta: 0, form: 0, leads: 0, rateCta: 0, rateForm: 0, rateLead: 0 },
