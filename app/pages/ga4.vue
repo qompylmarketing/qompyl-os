@@ -269,8 +269,25 @@ const data = ref(null)
 const loading = ref(true)
 const openDropdown = ref(null)
 
+// 🚀 توليد التواريخ الديناميكية (آخر 30 يوماً)
+const today = new Date();
+const thirtyDaysAgo = new Date();
+thirtyDaysAgo.setDate(today.getDate() - 30);
+
+// دالة لتنسيق التاريخ إلى YYYY-MM-DD ليتوافق مع input type="date"
+const formatDateForInput = (dateObj) => {
+  const year = dateObj.getFullYear();
+  const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+  const day = String(dateObj.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
+
+// 🚀 تعيين التواريخ الافتراضية
 const filters = ref({
-  startDate: '2026-08-01', endDate: '2026-08-31', channels: ['all'], devices: ['all']
+  startDate: formatDateForInput(thirtyDaysAgo), 
+  endDate: formatDateForInput(today), 
+  channels: ['all'], 
+  devices: ['all']
 })
 
 const channelOptions = [
