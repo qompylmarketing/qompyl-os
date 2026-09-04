@@ -1,32 +1,29 @@
 // server/api/ga4.js
 import { BetaAnalyticsDataClient } from '@google-analytics/data';
+import path from 'path';
 
-// --- تهيئة العميل بطريقة Serverless-Safe لـ Vercel ---
 let analyticsDataClient;
 
 try {
-  // 1. محاولة العمل على Vercel (باستخدام متغيرات البيئة)
-  if (process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON) {
-    const credentials = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON);
-    
+  // 1. محاولة العمل على Vercel (باستخدام متغيرات البيئة المنفصلة)
+  if (process.env.GOOGLE_PRIVATE_KEY && process.env.GOOGLE_CLIENT_EMAIL) {
     analyticsDataClient = new BetaAnalyticsDataClient({
       credentials: {
-        client_email: credentials.client_email,
-        // هذا السطر السحري يحل مشكلة تشويه Vercel لفواصل الأسطر في المفتاح السري
-        private_key: credentials.private_key.replace(/\\n/g, '\n'),
-      },
-      projectId: credentials.project_id
+        client_email: process.env.GOOGLE_CLIENT_EMAIL,
+        // معالجة فواصل الأسطر التي قد تتغير في Vercel
+        private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+      }
     });
   } 
   // 2. محاولة العمل محلياً (Localhost)
   else {
-    // نمرر اسم الملف مباشرة (Nuxt Nitro سيبحث عنه في جذر المشروع)
+    const keyFilePath = path.resolve(process.cwd(), 'qompyl-507210-536b3ed8dad0.json');
     analyticsDataClient = new BetaAnalyticsDataClient({
-      keyFilename: 'qompyl-507210-536b3ed8dad0.json',
+      keyFilename: keyFilePath,
     });
   }
 } catch (error) {
-  console.error("🔥 GA4 Init Error (Check Vercel Env Vars):", error);
+  console.error("🔥 GA4 Init Error:", error);
 }
 
 const propertyId = '550697247';
