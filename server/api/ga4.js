@@ -1,12 +1,32 @@
 // server/api/ga4.js
 import { BetaAnalyticsDataClient } from '@google-analytics/data';
-import path from 'path';
+import path from 'path'; // ✅ تم نقل الـ import إلى أعلى الملف
 
-// إعداد عميل GA4 (تأكد من مسار ملف الصلاحيات)
-const keyFilePath = path.resolve(process.cwd(), 'qompyl-507210-536b3ed8dad0.json');
-const analyticsDataClient = new BetaAnalyticsDataClient({
-  keyFilename: keyFilePath,
-});
+// --- تهيئة العميل (Client Setup) بطريقة آمنة لـ Vercel ---
+let analyticsDataClient;
+
+try {
+  // المحاولة الأولى: قراءة الـ Credentials من Vercel Environment Variables
+  if (process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON) {
+    const credentials = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON);
+    analyticsDataClient = new BetaAnalyticsDataClient({
+      credentials: {
+        client_email: credentials.client_email,
+        private_key: credentials.private_key,
+      },
+      projectId: credentials.project_id
+    });
+  } 
+  // المحاولة الثانية: للبيئة المحلية (Local Development) - تأكد من وجود الملف محلياً ولكن استثنه من GitHub
+  else {
+    const keyFilePath = path.resolve(process.cwd(), 'qompyl-507210-536b3ed8dad0.json');
+    analyticsDataClient = new BetaAnalyticsDataClient({
+      keyFilename: keyFilePath,
+    });
+  }
+} catch (error) {
+  console.error("Failed to initialize GA4 Client. Check Credentials.", error);
+}
 
 const propertyId = '550697247';
 
@@ -19,6 +39,9 @@ export default defineEventHandler(async (event) => {
   const dateRanges = [{ startDate, endDate }];
 
   try {
+    // التحقق من تهيئة العميل قبل الطلب
+    if (!analyticsDataClient) throw new Error("GA4 Client not initialized.");
+
     // 2. طلب المجاميع الدقيقة (للكروت والـ Funnel)
     const [totalsResponse] = await analyticsDataClient.runReport({
       property: `properties/${propertyId}`,
