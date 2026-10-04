@@ -1,24 +1,29 @@
 // server/api/ga4.js
 import { BetaAnalyticsDataClient } from '@google-analytics/data';
-import path from 'path';
 
 let analyticsDataClient;
 
 try {
-  // الاعتماد الحصري والمباشر على ملف JSON لتجنب أي مشاكل في .env
-  const keyFilePath = path.resolve(process.cwd(), 'qompyl-507210-9b519e513623.json');
-  
+  // التحقق من وجود متغيرات البيئة (التي قمنا بوضعها في Vercel أو .env محلياً)
+  if (!process.env.GOOGLE_CLIENT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY) {
+    throw new Error("Missing Google Credentials in Environment Variables.");
+  }
+
+  // معالجة الفواصل الزمنية في المفتاح السري لضمان قراءته بشكل صحيح
+  const privateKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n');
+
   analyticsDataClient = new BetaAnalyticsDataClient({
-    keyFilename: keyFilePath,
+    credentials: {
+      client_email: process.env.GOOGLE_CLIENT_EMAIL,
+      private_key: privateKey,
+    }
   });
-  
-  console.log("✅ GA4 Client Initialized via JSON File.");
+  console.log("✅ GA4 Client Initialized via Environment Variables.");
 } catch (error) {
-  console.error("🔥 GA4 Init Error:", error);
+  console.error("🔥 GA4 Init Error:", error.message);
 }
 
 const propertyId = '550697247';
-// ... باقي الكود كما هو
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event);
@@ -55,6 +60,8 @@ export default defineEventHandler(async (event) => {
     : undefined;
 
   const makeRequest = async (metrics, dimensions = []) => {
+    if (!analyticsDataClient) throw new Error("GA4 Client not initialized.");
+    
     const requestBody = {
       property: `properties/${propertyId}`,
       dateRanges,
@@ -67,9 +74,7 @@ export default defineEventHandler(async (event) => {
   };
 
   try {
-    if (!analyticsDataClient) throw new Error("GA4 Client not initialized.");
-
-    // 1. طلب المجاميع الدقيقة من GA4
+    // 1. استخراج المجاميع الأساسية
     const [totalsResponse] = await makeRequest([
       { name: 'activeUsers' },
       { name: 'engagedSessions' },
@@ -90,7 +95,7 @@ export default defineEventHandler(async (event) => {
     const sessions = extractTotal(3);
     const leads = extractTotal(4);
 
-    // 2. سحب أحداث cta_click و form_start الخام (Raw Data) من جوجل
+    // 2. سحب الأحداث الحقيقية (Raw Data) من GA4 
     const [eventsResponse] = await makeRequest(
       [{ name: 'eventCount' }],
       [{ name: 'eventName' }]
@@ -108,7 +113,7 @@ export default defineEventHandler(async (event) => {
       });
     }
 
-    // 3. حساب النسب المبدئية بناءً على أرقام GA4
+    // 3. حساب النسب المئوية بناءً على الأرقام الحقيقية
     const rateCta = sessions > 0 ? ((ctaClicks / sessions) * 100).toFixed(1) : 0;
     const rateForm = ctaClicks > 0 ? ((formStarts / ctaClicks) * 100).toFixed(1) : 0;
     const rateLead = formStarts > 0 ? ((leads / formStarts) * 100).toFixed(1) : 0;
