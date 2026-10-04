@@ -1,58 +1,57 @@
 // server/api/ga4.js
 import { BetaAnalyticsDataClient } from '@google-analytics/data';
 
-let analyticsDataClient;
-
-try {
-  // التحقق من وجود متغيرات البيئة (التي قمنا بوضعها في Vercel أو .env محلياً)
-  if (!process.env.GOOGLE_CLIENT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY) {
-    throw new Error("Missing Google Credentials in Environment Variables.");
-  }
-
-  // معالجة الفواصل الزمنية في المفتاح السري لضمان قراءته بشكل صحيح
-  const privateKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n');
-
-  analyticsDataClient = new BetaAnalyticsDataClient({
-    credentials: {
-      client_email: process.env.GOOGLE_CLIENT_EMAIL,
-      private_key: privateKey,
-    }
-  });
-  console.log("✅ GA4 Client Initialized via Environment Variables.");
-} catch (error) {
-  console.error("🔥 GA4 Init Error:", error.message);
-}
-
 const propertyId = '550697247';
+let analyticsDataClient = null;
 
 export default defineEventHandler(async (event) => {
+  // 🚀 نقلنا المصادقة لداخل الـ Handler عشان متضربش في الـ Build بتاع Vercel
+  if (!analyticsDataClient) {
+    if (!process.env.GOOGLE_CLIENT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY) {
+      console.error("Missing Google Credentials in Environment Variables.");
+      return getEmptyData(); 
+    }
+    
+    try {
+      const privateKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n');
+      analyticsDataClient = new BetaAnalyticsDataClient({
+        credentials: {
+          client_email: process.env.GOOGLE_CLIENT_EMAIL,
+          private_key: privateKey,
+        }
+      });
+    } catch (error) {
+      console.error("🔥 GA4 Init Error:", error.message);
+      return getEmptyData();
+    }
+  }
+
+  // دالة مساعدة لإرجاع أصفار في حالة الخطأ بدلاً من كسر اللوحة
+  function getEmptyData() {
+    return {
+      kpis: { users: 0, sessions: 0, engaged: 0, leads: 0, engagementRate: 0, avgTime: '0m 0s', sessionKeyRate: 0 },
+      funnel: { sessions: 0, cta: 0, form: 0, leads: 0, rateCta: 0, rateForm: 0, rateLead: 0 },
+      tables: { sourceTable: [], campaignTable: [], landingTable: [], countryTable: [] },
+      charts: { dates: [], usersByDate: [], leadsByDate: [], channels: [], sessionsByChannel: [], leadsByChannel: [], newReturning: [], devices: [], usersByDevice: [], leadsByDevice: [] },
+      insights: { leadEngine: '', champion: '', funnelAlert: '', utmDiscipline: '' }
+    };
+  }
+
   const query = getQuery(event);
-  
   const startDate = query.startDate || '2026-08-01';
   const endDate = query.endDate || 'today';
   const channels = query.channels || 'all';
   const devices = query.devices || 'all';
 
   const dateRanges = [{ startDate, endDate }];
-
   const expressions = [];
   
   if (channels !== 'all') {
-    expressions.push({
-      filter: {
-        fieldName: 'sessionDefaultChannelGroup',
-        inListFilter: { values: channels.split(',') }
-      }
-    });
+    expressions.push({ filter: { fieldName: 'sessionDefaultChannelGroup', inListFilter: { values: channels.split(',') } } });
   }
 
   if (devices !== 'all') {
-    expressions.push({
-      filter: {
-        fieldName: 'deviceCategory',
-        inListFilter: { values: devices.split(',') }
-      }
-    });
+    expressions.push({ filter: { fieldName: 'deviceCategory', inListFilter: { values: devices.split(',') } } });
   }
 
   const dimensionFilter = expressions.length > 0 
@@ -61,32 +60,20 @@ export default defineEventHandler(async (event) => {
 
   const makeRequest = async (metrics, dimensions = []) => {
     if (!analyticsDataClient) throw new Error("GA4 Client not initialized.");
-    
-    const requestBody = {
-      property: `properties/${propertyId}`,
-      dateRanges,
-      metrics
-    };
+    const requestBody = { property: `properties/${propertyId}`, dateRanges, metrics };
     if (dimensions.length > 0) requestBody.dimensions = dimensions;
     if (dimensionFilter) requestBody.dimensionFilter = dimensionFilter;
-    
     return await analyticsDataClient.runReport(requestBody);
   };
 
   try {
-    // 1. استخراج المجاميع الأساسية
     const [totalsResponse] = await makeRequest([
-      { name: 'activeUsers' },
-      { name: 'engagedSessions' },
-      { name: 'engagementRate' },
-      { name: 'sessions' },
-      { name: 'keyEvents' },
-      { name: 'userEngagementDuration' }
+      { name: 'activeUsers' }, { name: 'engagedSessions' }, { name: 'engagementRate' },
+      { name: 'sessions' }, { name: 'keyEvents' }, { name: 'userEngagementDuration' }
     ]);
 
     const extractTotal = (index) => {
-      try { return parseFloat(totalsResponse.rows[0].metricValues[index].value); } 
-      catch { return 0; }
+      try { return parseFloat(totalsResponse.rows[0].metricValues[index].value); } catch { return 0; }
     };
 
     const users = extractTotal(0);
@@ -95,11 +82,7 @@ export default defineEventHandler(async (event) => {
     const sessions = extractTotal(3);
     const leads = extractTotal(4);
 
-    // 2. سحب الأحداث الحقيقية (Raw Data) من GA4 
-    const [eventsResponse] = await makeRequest(
-      [{ name: 'eventCount' }],
-      [{ name: 'eventName' }]
-    );
+    const [eventsResponse] = await makeRequest([{ name: 'eventCount' }], [{ name: 'eventName' }]);
 
     let ctaClicks = 0;
     let formStarts = 0;
@@ -113,7 +96,6 @@ export default defineEventHandler(async (event) => {
       });
     }
 
-    // 3. حساب النسب المئوية بناءً على الأرقام الحقيقية
     const rateCta = sessions > 0 ? ((ctaClicks / sessions) * 100).toFixed(1) : 0;
     const rateForm = ctaClicks > 0 ? ((formStarts / ctaClicks) * 100).toFixed(1) : 0;
     const rateLead = formStarts > 0 ? ((leads / formStarts) * 100).toFixed(1) : 0;
@@ -122,60 +104,39 @@ export default defineEventHandler(async (event) => {
     const totalEngagementSeconds = extractTotal(5);
     const avgTimeSeconds = users > 0 ? Math.round(totalEngagementSeconds / users) : 0; 
 
-    // طلب الجداول المتبقية
     const [sourceResponse] = await makeRequest(
       [{ name: 'activeUsers' }, { name: 'engagedSessions' }, { name: 'keyEvents' }],
       [{ name: 'sessionSourceMedium' }]
     );
-    
     let sourceTable = (sourceResponse.rows || []).map(row => ({
-      name: row.dimensionValues[0].value,
-      users: parseInt(row.metricValues[0].value),
-      engaged: parseInt(row.metricValues[1].value),
-      leads: parseInt(row.metricValues[2].value),
+      name: row.dimensionValues[0].value, users: parseInt(row.metricValues[0].value),
+      engaged: parseInt(row.metricValues[1].value), leads: parseInt(row.metricValues[2].value),
       cvr: parseInt(row.metricValues[0].value) > 0 ? ((parseInt(row.metricValues[2].value) / parseInt(row.metricValues[0].value)) * 100).toFixed(1) : 0
     })).sort((a, b) => b.users - a.users);
 
-    const [countryResponse] = await makeRequest(
-      [{ name: 'activeUsers' }, { name: 'keyEvents' }],
-      [{ name: 'country' }]
-    );
-
+    const [countryResponse] = await makeRequest([{ name: 'activeUsers' }, { name: 'keyEvents' }], [{ name: 'country' }]);
     let countryTable = (countryResponse.rows || []).map(row => ({
-      name: row.dimensionValues[0].value,
-      users: parseInt(row.metricValues[0].value),
-      leads: parseInt(row.metricValues[1].value)
+      name: row.dimensionValues[0].value, users: parseInt(row.metricValues[0].value), leads: parseInt(row.metricValues[1].value)
     })).sort((a, b) => b.users - a.users);
 
     const [pageResponse] = await makeRequest(
       [{ name: 'screenPageViews' }, { name: 'activeUsers' }, { name: 'keyEvents' }],
       [{ name: 'pagePath' }]
     );
-
     let landingTable = (pageResponse.rows || []).map(row => ({
-      name: row.dimensionValues[0].value,
-      views: parseInt(row.metricValues[0].value),
-      users: parseInt(row.metricValues[1].value),
-      leads: parseInt(row.metricValues[2].value),
+      name: row.dimensionValues[0].value, views: parseInt(row.metricValues[0].value),
+      users: parseInt(row.metricValues[1].value), leads: parseInt(row.metricValues[2].value),
       unengagedRate: parseInt(row.metricValues[0].value) > 0 ? (((parseInt(row.metricValues[0].value) - parseInt(row.metricValues[1].value)) / parseInt(row.metricValues[0].value)) * 100).toFixed(1) : 0
     })).sort((a, b) => b.views - a.views);
 
-    const [dateResponse] = await makeRequest(
-      [{ name: 'activeUsers' }, { name: 'keyEvents' }],
-      [{ name: 'date' }]
-    );
-
+    const [dateResponse] = await makeRequest([{ name: 'activeUsers' }, { name: 'keyEvents' }], [{ name: 'date' }]);
     const dateData = (dateResponse.rows || []).map(row => ({
-      date: row.dimensionValues[0].value,
-      users: parseInt(row.metricValues[0].value),
-      leads: parseInt(row.metricValues[1].value)
+      date: row.dimensionValues[0].value, users: parseInt(row.metricValues[0].value), leads: parseInt(row.metricValues[1].value)
     })).sort((a, b) => a.date.localeCompare(b.date));
 
     const chartDates = dateData.map(row => {
         if(row.date && row.date.length === 8) {
-          const year = row.date.substring(0,4);
-          const month = row.date.substring(4,6);
-          const day = row.date.substring(6,8);
+          const year = row.date.substring(0,4); const month = row.date.substring(4,6); const day = row.date.substring(6,8);
           return new Date(`${year}-${month}-${day}T00:00:00`).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
         }
         return row.date;
@@ -183,7 +144,6 @@ export default defineEventHandler(async (event) => {
     
     const usersByDate = dateData.map(row => row.users);
     const leadsByDate = dateData.map(row => row.leads);
-
     const topSource = sourceTable[0] ? sourceTable[0] : null;
 
     return {
@@ -207,16 +167,8 @@ export default defineEventHandler(async (event) => {
         utmDiscipline: `Analyzing UTM tracking accuracy...`
       }
     };
-
   } catch (error) {
     console.error('🔥 API Execution Error:', error);
-    
-    return {
-        kpis: { users: 0, sessions: 0, engaged: 0, leads: 0, engagementRate: 0, avgTime: '0m 0s', sessionKeyRate: 0 },
-        funnel: { sessions: 0, cta: 0, form: 0, leads: 0, rateCta: 0, rateForm: 0, rateLead: 0 },
-        tables: { sourceTable: [], campaignTable: [], landingTable: [], countryTable: [] },
-        charts: { dates: [], usersByDate: [], leadsByDate: [], channels: [], sessionsByChannel: [], leadsByChannel: [], newReturning: [], devices: [], usersByDevice: [], leadsByDevice: [] },
-        insights: { leadEngine: '', champion: '', funnelAlert: '', utmDiscipline: '' }
-    };
+    return getEmptyData();
   }
 });
