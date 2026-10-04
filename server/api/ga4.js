@@ -5,24 +5,20 @@ import path from 'path';
 let analyticsDataClient;
 
 try {
-  if (process.env.GOOGLE_PRIVATE_KEY && process.env.GOOGLE_CLIENT_EMAIL) {
-    analyticsDataClient = new BetaAnalyticsDataClient({
-      credentials: {
-        client_email: process.env.GOOGLE_CLIENT_EMAIL,
-        private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-      }
-    });
-  } else {
-    const keyFilePath = path.resolve(process.cwd(), 'qompyl-507210-536b3ed8dad0.json');
-    analyticsDataClient = new BetaAnalyticsDataClient({
-      keyFilename: keyFilePath,
-    });
-  }
+  // الاعتماد الحصري والمباشر على ملف JSON لتجنب أي مشاكل في .env
+  const keyFilePath = path.resolve(process.cwd(), 'qompyl-507210-9b519e513623.json');
+  
+  analyticsDataClient = new BetaAnalyticsDataClient({
+    keyFilename: keyFilePath,
+  });
+  
+  console.log("✅ GA4 Client Initialized via JSON File.");
 } catch (error) {
   console.error("🔥 GA4 Init Error:", error);
 }
 
 const propertyId = '550697247';
+// ... باقي الكود كما هو
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event);
