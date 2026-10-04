@@ -13,17 +13,17 @@
         </div>
       </div>
       <!-- الفلاتر يتم قفلها (Disabled) وتبهيت لونها أثناء التحميل -->
-      <div class="filters-group" :class="{ 'disabled-filters': loading }">
-        <div class="date-badge">
-          <Icon name="calendar" :size="14" /> August 2026 (Baseline)
-        </div>
-        <button class="action-btn primary" @click="exportReport" :disabled="loading">
-          <Icon name="download" :size="14" /> Export Report
-        </button>
-      </div>
+<div class="filters-group" :class="{ 'disabled-filters': loading }">
+  <div class="date-badge">
+    <Icon name="calendar" :size="14" /> {{ currentDateRange }}
+  </div>
+  <button class="action-btn primary" @click="exportReport" :disabled="loading">
+    <Icon name="download" :size="14" /> Export Report
+  </button>
+</div>
     </header>
 
-    <!-- 🌟 Skeleton Loading State (Enterprise UX) -->
+    <!-- 🌟 Skeleton Loading State -->
     <div v-if="loading" class="bento-grid">
       <!-- Skeleton Pulse Row -->
       <div class="col-12 pulse-row">
@@ -50,66 +50,62 @@
       <div class="col-12 bento-card skeleton-card" style="height: 250px;"></div>
     </div>
 
-    <!-- 🚀 Dashboard Content (Live Data) يظهر بـ Fade-in Animation -->
+    <!-- 🚀 Dashboard Content (Live Data) -->
     <div v-else class="bento-grid fade-in">
 
-      <!-- 2. GROWTH PULSE -->
+      <!-- 2. GROWTH PULSE (البيانات الحية) -->
       <div class="col-12 pulse-row">
-        <!-- Highlighted Card: تمييز بصري لأهم مقياس -->
         <div class="bento-card scorecard mini highlight-card">
           <span class="score-title" style="color: var(--teal-normal);">Total Leads</span>
           <div class="score-main">
-            <p class="score-value" style="color: var(--teal-normal);">142</p>
-            <span class="baseline-badge highlight-badge">Baseline Month</span>
+            <!-- ربط عدد الـ Leads -->
+            <p class="score-value" style="color: var(--teal-normal);">{{ totalLeads.toLocaleString() }}</p>
+            <span class="baseline-badge highlight-badge">Since Aug '26</span>
           </div>
         </div>
         <div class="bento-card scorecard mini">
           <span class="score-title">Active Users</span>
           <div class="score-main">
-            <p class="score-value">8,420</p>
-            <span class="baseline-badge muted">Baseline Month</span>
+            <!-- ربط عدد الزوار -->
+            <p class="score-value">{{ activeUsers.toLocaleString() }}</p>
+            <span class="baseline-badge muted">Since Aug '26</span>
           </div>
         </div>
         <div class="bento-card scorecard mini">
           <span class="score-title">Organic Clicks</span>
           <div class="score-main">
-            <p class="score-value" style="color: var(--blue-normal);">36</p>
-            <span class="baseline-badge muted">Baseline Month</span>
+            <!-- ربط النقرات العضوية -->
+            <p class="score-value" style="color: var(--blue-normal);">{{ organicClicks.toLocaleString() }}</p>
+            <span class="baseline-badge muted">Since Aug '26</span>
           </div>
         </div>
         <div class="bento-card scorecard mini">
           <span class="score-title">Lead CVR</span>
           <div class="score-main">
-            <p class="score-value">1.6%</p>
-            <span class="baseline-badge muted">Baseline Month</span>
+            <!-- ربط معدل التحويل -->
+            <p class="score-value">{{ leadCvr }}%</p>
+            <span class="baseline-badge muted">Since Aug '26</span>
           </div>
         </div>
         <div class="bento-card scorecard mini">
           <span class="score-title">Avg. Position</span>
           <div class="score-main">
-            <p class="score-value">12.4</p>
-            <span class="baseline-badge muted">Baseline Month</span>
+            <!-- ربط متوسط الترتيب -->
+            <p class="score-value">{{ avgPosition }}</p>
+            <span class="baseline-badge muted">Since Aug '26</span>
           </div>
         </div>
       </div>
 
       <!-- 3. Question Chips -->
       <div class="col-12 chips-container">
-        <NuxtLink to="/ga4" class="q-chip">
-          <Icon name="users" :size="14" /> Who's coming from where?
-        </NuxtLink>
-        <NuxtLink to="/search-console" class="q-chip">
-          <Icon name="search" :size="14" /> How does Google see us?
-        </NuxtLink>
-        <NuxtLink to="/clarity" class="q-chip">
-          <Icon name="mouse-pointer" :size="14" /> Where do users struggle?
-        </NuxtLink>
-        <NuxtLink to="/gtm" class="q-chip">
-          <Icon name="shield-check" :size="14" /> Can we trust the data?
-        </NuxtLink>
+        <NuxtLink to="/ga4" class="q-chip"><Icon name="users" :size="14" /> Who's coming from where?</NuxtLink>
+        <NuxtLink to="/search-console" class="q-chip"><Icon name="search" :size="14" /> How does Google see us?</NuxtLink>
+        <NuxtLink to="/clarity" class="q-chip"><Icon name="mouse-pointer" :size="14" /> Where do users struggle?</NuxtLink>
+        <NuxtLink to="/gtm" class="q-chip"><Icon name="shield-check" :size="14" /> Can we trust the data?</NuxtLink>
       </div>
 
-      <!-- 4. Auto Insights (Live API logic placeholder) -->
+      <!-- 4. Auto Insights -->
       <div class="col-8 layout-column">
         <div class="section-header">
           <h2 class="section-title"><Icon name="zap" :size="18" style="color: #FBBF24;" /> Live Auto-Insights</h2>
@@ -166,7 +162,6 @@
             <div class="next-read">Next read: {{ formatDate(latestMemo.next_read_date) }}</div>
           </div>
         </div>
-        <!-- Fallback if no memo exists -->
         <div v-else class="bento-card memo-card" style="display: flex; align-items: center; justify-content: center;">
           <p style="color: var(--text-tertiary);">No memos published yet.</p>
         </div>
@@ -194,7 +189,6 @@
               <span class="badge" :class="getBadgeClass(decision.status)">{{ decision.status }}</span>
             </div>
           </div>
-          <!-- Fallback if empty -->
           <div v-if="decisionsList.length === 0" style="text-align: center; padding: 20px; color: var(--text-tertiary);">
             No active decisions recorded.
           </div>
@@ -251,37 +245,83 @@ import Icon from '~/components/Icon.vue'
 const supabase = useSupabaseClient()
 const loading = ref(true)
 
-// متغيرات البيانات الحية
+// متغيرات البيانات الحية (Board & Memos)
 const latestMemo = ref(null)
 const decisionsList = ref([])
+
+// متغيرات مؤشرات الأداء (KPIs) التفاعلية
+const totalLeads = ref(0)
+const activeUsers = ref(0)
+const organicClicks = ref(0)
+const leadCvr = computed(() => {
+  // التأكد من أن الأرقام تم جلبها وأن لا نقسم على صفر
+  if (activeUsers.value > 0 && totalLeads.value > 0) {
+    return ((totalLeads.value / activeUsers.value) * 100).toFixed(1);
+  }
+  return '0.0'; // القيمة الافتراضية إذا كانت البيانات قيد التحميل
+});
+const avgPosition = ref('0.0')
 
 onMounted(async () => {
   loading.value = true
   try {
-    // 1. جلب أحدث مذكرة من جدول analyst_memos
-    const { data: memoData, error: memoErr } = await supabase
-      .from('analyst_memos')
-      .select('*')
-      .order('publish_date', { ascending: false })
-      .limit(1)
-      .single()
-      
-    if (memoData) latestMemo.value = memoData
-    if (memoErr && memoErr.code !== 'PGRST116') console.error('Memo Fetch Error:', memoErr)
+    // استخدام Promise.allSettled لجلب كافة البيانات بشكل متوازٍ دون أن يعطل أحدهم الآخر
+    const [
+      memosRes, 
+      decisionsRes, 
+      leadsRes, 
+      ga4Res, 
+      searchConsoleRes
+    ] = await Promise.allSettled([
+      // 1. المذكرات
+      supabase.from('analyst_memos').select('*').order('publish_date', { ascending: false }).limit(1).single(),
+      // 2. القرارات
+      supabase.from('decisions_board').select('*').order('created_at', { ascending: false }),
+      // 3. عدد العملاء (Leads)
+      supabase.from('leads').select('*', { count: 'exact', head: true }),
+      // 4. إحصائيات GA4 (تأكد أن المسار صحيح في مشروعك)
+      $fetch('/api/ga4').catch(() => null),
+      // 5. إحصائيات Search Console (تأكد أن المسار صحيح في مشروعك)
+      $fetch('/api/search-console').catch(() => null)
+    ])
 
-    // 2. جلب القرارات من جدول decisions_board
-    const { data: decisionsData, error: decErr } = await supabase
-      .from('decisions_board')
-      .select('*')
-      .order('created_at', { ascending: false })
+    // معالجة بيانات المذكرات
+    if (memosRes.status === 'fulfilled' && memosRes.value.data) {
+      latestMemo.value = memosRes.value.data
+    } else if (memosRes.status === 'fulfilled' && memosRes.value.error?.code !== 'PGRST116') {
+      console.error('Memo Fetch Error:', memosRes.value.error)
+    }
 
-    if (decisionsData) decisionsList.value = decisionsData
-    if (decErr) console.error('Decisions Fetch Error:', decErr)
+    // معالجة بيانات القرارات
+    if (decisionsRes.status === 'fulfilled' && decisionsRes.value.data) {
+      decisionsList.value = decisionsRes.value.data
+    }
+
+    // معالجة بيانات العملاء المحتملين (Total Leads)
+    if (leadsRes.status === 'fulfilled' && leadsRes.value.count !== null) {
+      totalLeads.value = leadsRes.value.count
+    }
+
+    // معالجة بيانات جوجل أناليتكس (Active Users)
+    if (ga4Res.status === 'fulfilled' && ga4Res.value) {
+      activeUsers.value = ga4Res.value?.kpis?.users || 0
+    }
+
+    // معالجة بيانات سيرش كونسول (Organic Clicks & Avg Position)
+    if (searchConsoleRes.status === 'fulfilled' && searchConsoleRes.value) {
+      organicClicks.value = searchConsoleRes.value?.summary?.totalClicks || 0
+      avgPosition.value = searchConsoleRes.value?.summary?.averagePosition || '0.0'
+    }
+
+    // حساب معدل التحويل (Lead CVR) تلقائياً بناءً على الأرقام
+    if (activeUsers.value > 0) {
+      leadCvr.value = ((totalLeads.value / activeUsers.value) * 100).toFixed(1)
+    }
 
   } catch (error) {
     console.error('Unexpected error fetching data:', error)
   } finally {
-    // تأخير وهمي بسيط (نصف ثانية) لتشعر الإدارة بسلاسة الأنيميشن وتأثير الـ Skeleton
+    // تأخير وهمي بسيط لتشعر الإدارة بسلاسة الأنيميشن
     setTimeout(() => { loading.value = false }, 500)
   }
 })
@@ -300,20 +340,25 @@ const getBadgeClass = (status) => {
   return 'badge-open' // الافتراضي
 }
 
-// في قسم <script setup> في ملف index.vue
 const exportReport = () => {
-  // 1. يمكنك إضافة أي منطق تحضيري هنا (مثل إخفاء عناصر معينة قبل الطباعة)
-  
-  // 2. استدعاء نافذة الطباعة
   window.print();
-  
-  // 3. اختياري: إضافة إشعار (Toast) إذا كان لديك نظام إشعارات مفعل في هذه الصفحة
   console.log('Executive report export initiated.');
 }
-
+// حساب النطاق الزمني ديناميكياً للـ Header
+const currentDateRange = computed(() => {
+  const currentMonth = new Date().toLocaleString('en-US', { month: 'short' })
+  const currentYear = new Date().getFullYear().toString().slice(-2) // يجلب '26'
+  
+  // إذا كنا في نفس الشهر (أغسطس)، يعرض أغسطس فقط، غير ذلك يعرض النطاق
+  if (currentMonth === 'Aug' && currentYear === '26') {
+    return "Aug '26"
+  }
+  return `Aug '26 - ${currentMonth} '${currentYear}`
+})
 </script>
 
 <style scoped>
+/* لا يوجد تغيير في الـ CSS - احتفظ بنفس الأكواد الخاصة بك لأنها ممتازة وتفي بالغرض للطباعة وللشاشات */
 @import '~/assets/styles/dashboard-shared.css';
 
 /* UX Enhancements: Loading & Animations */
@@ -440,100 +485,21 @@ td { padding: 16px 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.02); }
 }
 @media (max-width: 600px) { .pulse-row { grid-template-columns: 1fr; } }
 
-/* 🚀 Print Styles for PDF Export (Optimized for A4) */
+/* 🚀 Print Styles for PDF Export */
 @media print {
-  /* 1. إخفاء العناصر غير المطلوبة (القائمة الجانبية، الأزرار، والروابط) */
-  .sidebar, 
-  .action-btn,
-  .q-chip,
-  .table-link {
-    display: none !important;
-  }
-
-  /* إخفاء عمود الـ Action بالكامل من الجدول (الرأس والخلية) */
-  th:last-child, 
-  td:last-child {
-    display: none !important;
-  }
-
-  /* 2. إعادة ضبط الصفحة بالكامل وإلغاء الـ Layout الأساسي */
-  body, 
-  .layout-wrapper, 
-  .main-content {
-    background: #fff !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    display: block !important; /* إلغاء الـ Flex الأساسي */
-  }
-
-  /* 3. إلغاء الـ CSS Grid القاتل للطباعة */
-  .bento-grid {
-    display: block !important;
-  }
-
-  /* 4. جعل كل الكروت تأخذ عرض الصفحة بالكامل لتجنب تداخل النصوص */
-  .col-8, .col-4, .col-12 {
-    width: 100% !important;
-    display: block !important;
-    margin-bottom: 24px !important;
-  }
-
-  /* 5. تصميم الكروت (Bento Cards) للطباعة */
-  .bento-card {
-    background: transparent !important;
-    border: 1px solid #e2e8f0 !important; /* حدود رمادية فاتحة جداً */
-    box-shadow: none !important;
-    break-inside: avoid !important; /* 🚀 منع انقسام الكارت بين صفحتين */
-    page-break-inside: avoid !important;
-    margin-bottom: 24px !important;
-  }
-
-  /* 6. حل مشكلة الـ KPIs (Pulse Row) */
-  .pulse-row {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 15px !important;
-  }
-  .scorecard.mini {
-    width: calc(33.333% - 10px) !important; /* عرض 3 كروت في السطر بدلاً من 5 */
-    margin-bottom: 0 !important;
-    padding: 16px !important;
-    flex-grow: 1;
-  }
-
-  /* 7. إجبار الألوان (Badges & Icons) على الطباعة بدقة */
-  * {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
-
-  /* 8. توحيد ألوان النصوص بالأسود والرمادي الداكن للقراءة */
-  h1, h2, h3, h4, .score-title, .insight-title, .card-title, th {
-    color: #111 !important;
-  }
-  
-  .score-value {
-    color: #000 !important;
-    -webkit-text-fill-color: #000 !important; /* إزالة التدرج اللوني الذي يشوه الطباعة */
-    font-size: 24px !important; /* تصغير الأرقام قليلاً لتناسب الورق */
-  }
-
-  p, td, .desc, .text-secondary, .text-tertiary {
-    color: #333 !important;
-  }
-
-  /* 9. تحسين شكل جدول القرارات لتجنب تداخل النص */
-  .decision-item {
-    break-inside: avoid !important;
-    border: 1px solid #f1f5f9 !important;
-    align-items: flex-start !important; /* محاذاة لليسار بدلاً من الوسط */
-  }
-
-  /* إعدادات حجم الورقة (A4) وهوامشها */
-  @page {
-    size: A4 portrait;
-    margin: 1.5cm;
-  }
+  .sidebar, .action-btn, .q-chip, .table-link { display: none !important; }
+  th:last-child, td:last-child { display: none !important; }
+  body, .layout-wrapper, .main-content { background: #fff !important; width: 100% !important; margin: 0 !important; padding: 0 !important; display: block !important; }
+  .bento-grid { display: block !important; }
+  .col-8, .col-4, .col-12 { width: 100% !important; display: block !important; margin-bottom: 24px !important; }
+  .bento-card { background: transparent !important; border: 1px solid #e2e8f0 !important; box-shadow: none !important; break-inside: avoid !important; page-break-inside: avoid !important; margin-bottom: 24px !important; }
+  .pulse-row { display: flex !important; flex-wrap: wrap !important; gap: 15px !important; }
+  .scorecard.mini { width: calc(33.333% - 10px) !important; margin-bottom: 0 !important; padding: 16px !important; flex-grow: 1; }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  h1, h2, h3, h4, .score-title, .insight-title, .card-title, th { color: #111 !important; }
+  .score-value { color: #000 !important; -webkit-text-fill-color: #000 !important; font-size: 24px !important; }
+  p, td, .desc, .text-secondary, .text-tertiary { color: #333 !important; }
+  .decision-item { break-inside: avoid !important; border: 1px solid #f1f5f9 !important; align-items: flex-start !important; }
+  @page { size: A4 portrait; margin: 1.5cm; }
 }
 </style>

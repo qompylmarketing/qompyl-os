@@ -17,7 +17,6 @@
       <div class="filters-group" :class="{ 'disabled-filters': loading }">
         <!-- Date Range -->
         <div class="date-range-control">
-          <Icon name="calendar" :size="14" />
           <input type="date" v-model="filters.startDate" @change="applyFilters">
           <span class="date-arrow">→</span>
           <input type="date" v-model="filters.endDate" @change="applyFilters">
@@ -105,7 +104,7 @@
         <span class="score-title">Total Impressions</span>
         <div class="score-main">
           <p class="score-value">{{ data.summary.totalImpressions }}</p>
-             <span class="baseline-badge"><Icon name="minus" :size="12" /> Baseline Month 1</span>
+             <span class="baseline-badge"><Icon name="minus" :size="12" /> Selected Period</span>
         </div>
       </div>
       
@@ -114,7 +113,7 @@
         <span class="score-title" style="color: var(--teal-normal);">Total Clicks</span>
         <div class="score-main">
           <p class="score-value highlight-text">{{ data.summary.totalClicks }}</p>
-          <span class="baseline-badge"><Icon name="minus" :size="12" /> Baseline Month 1</span>
+          <span class="baseline-badge"><Icon name="minus" :size="12" /> Selected Period</span>
         </div>
       </div>
 
@@ -122,14 +121,14 @@
         <span class="score-title">Average CTR</span>
         <div class="score-main">
           <p class="score-value">{{ data.summary.averageCtr }}%</p>
-          <span class="baseline-badge"><Icon name="minus" :size="12" /> Baseline Month 1</span>
+          <span class="baseline-badge"><Icon name="minus" :size="12" /> Selected Period</span>
         </div>
       </div>
       <div class="bento-card col-3 scorecard">
         <span class="score-title">Avg. Position</span>
         <div class="score-main">
           <p class="score-value">{{ data.summary.averagePosition }}</p>
-          <span class="baseline-badge"><Icon name="minus" :size="12" /> Baseline Month 1</span>
+          <span class="baseline-badge"><Icon name="minus" :size="12" /> Selected Period</span>
         </div>
       </div>
 

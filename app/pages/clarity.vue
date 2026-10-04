@@ -284,8 +284,12 @@ const openSelect = ref(null)
 const rangeLabels = {
   '1': 'Last 24 Hours',
   '3': 'Last 3 Days',
-  '7': 'Last 7 Days'
+  '7': 'Last 7 Days',
+  '14': 'Last 14 Days', // 🚀 الخيار الجديد
+  '30': 'Last 30 Days'  // 🚀 الخيار الجديد
 }
+
+
 
 const currentKPIs = computed(() => {
   if (!data.value || !data.value.reports) return { sessions: 0, rageClicks: 0, deadClicks: 0, quickBacks: 0 }

@@ -89,2054 +89,3107 @@
       "impressions": 6,
       "ctr": 0,
       "position": 15.5
+    },
+    {
+      "keys": [
+        "2026-08-30"
+      ],
+      "clicks": 6,
+      "impressions": 27,
+      "ctr": 0.2222222222222222,
+      "position": 10.037037037037036
+    },
+    {
+      "keys": [
+        "2026-08-31"
+      ],
+      "clicks": 5,
+      "impressions": 25,
+      "ctr": 0.2,
+      "position": 10.28
+    },
+    {
+      "keys": [
+        "2026-09-01"
+      ],
+      "clicks": 7,
+      "impressions": 36,
+      "ctr": 0.19444444444444445,
+      "position": 2.5555555555555554
+    },
+    {
+      "keys": [
+        "2026-09-02"
+      ],
+      "clicks": 10,
+      "impressions": 42,
+      "ctr": 0.23809523809523808,
+      "position": 2.880952380952381
+    },
+    {
+      "keys": [
+        "2026-09-03"
+      ],
+      "clicks": 7,
+      "impressions": 30,
+      "ctr": 0.23333333333333334,
+      "position": 5.733333333333333
+    },
+    {
+      "keys": [
+        "2026-09-04"
+      ],
+      "clicks": 5,
+      "impressions": 19,
+      "ctr": 0.2631578947368421,
+      "position": 4.421052631578947
+    },
+    {
+      "keys": [
+        "2026-09-05"
+      ],
+      "clicks": 3,
+      "impressions": 21,
+      "ctr": 0.14285714285714285,
+      "position": 11.857142857142858
+    },
+    {
+      "keys": [
+        "2026-09-06"
+      ],
+      "clicks": 5,
+      "impressions": 38,
+      "ctr": 0.13157894736842105,
+      "position": 8.078947368421051
+    },
+    {
+      "keys": [
+        "2026-09-07"
+      ],
+      "clicks": 3,
+      "impressions": 55,
+      "ctr": 0.05454545454545454,
+      "position": 7.327272727272727
+    },
+    {
+      "keys": [
+        "2026-09-08"
+      ],
+      "clicks": 6,
+      "impressions": 27,
+      "ctr": 0.2222222222222222,
+      "position": 3.6296296296296298
+    },
+    {
+      "keys": [
+        "2026-09-09"
+      ],
+      "clicks": 4,
+      "impressions": 34,
+      "ctr": 0.11764705882352941,
+      "position": 4.088235294117647
+    },
+    {
+      "keys": [
+        "2026-09-10"
+      ],
+      "clicks": 6,
+      "impressions": 31,
+      "ctr": 0.1935483870967742,
+      "position": 7.903225806451613
+    },
+    {
+      "keys": [
+        "2026-09-11"
+      ],
+      "clicks": 6,
+      "impressions": 22,
+      "ctr": 0.2727272727272727,
+      "position": 3.4545454545454546
+    },
+    {
+      "keys": [
+        "2026-09-12"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 10.142857142857142
+    },
+    {
+      "keys": [
+        "2026-09-13"
+      ],
+      "clicks": 1,
+      "impressions": 7,
+      "ctr": 0.14285714285714285,
+      "position": 8.285714285714285
+    },
+    {
+      "keys": [
+        "2026-09-14"
+      ],
+      "clicks": 4,
+      "impressions": 21,
+      "ctr": 0.19047619047619047,
+      "position": 2.8095238095238093
+    },
+    {
+      "keys": [
+        "2026-09-15"
+      ],
+      "clicks": 6,
+      "impressions": 25,
+      "ctr": 0.24,
+      "position": 6.52
+    },
+    {
+      "keys": [
+        "2026-09-16"
+      ],
+      "clicks": 15,
+      "impressions": 34,
+      "ctr": 0.4411764705882353,
+      "position": 2.3529411764705883
+    },
+    {
+      "keys": [
+        "2026-09-17"
+      ],
+      "clicks": 13,
+      "impressions": 44,
+      "ctr": 0.29545454545454547,
+      "position": 2.2272727272727275
+    },
+    {
+      "keys": [
+        "2026-09-18"
+      ],
+      "clicks": 5,
+      "impressions": 11,
+      "ctr": 0.45454545454545453,
+      "position": 12.727272727272727
+    },
+    {
+      "keys": [
+        "2026-09-19"
+      ],
+      "clicks": 4,
+      "impressions": 15,
+      "ctr": 0.26666666666666666,
+      "position": 8.466666666666667
+    },
+    {
+      "keys": [
+        "2026-09-20"
+      ],
+      "clicks": 2,
+      "impressions": 10,
+      "ctr": 0.2,
+      "position": 7.2
+    },
+    {
+      "keys": [
+        "2026-09-21"
+      ],
+      "clicks": 8,
+      "impressions": 24,
+      "ctr": 0.3333333333333333,
+      "position": 2.25
+    },
+    {
+      "keys": [
+        "2026-09-22"
+      ],
+      "clicks": 6,
+      "impressions": 24,
+      "ctr": 0.25,
+      "position": 8.291666666666668
+    },
+    {
+      "keys": [
+        "2026-09-23"
+      ],
+      "clicks": 14,
+      "impressions": 31,
+      "ctr": 0.45161290322580644,
+      "position": 8.258064516129032
+    },
+    {
+      "keys": [
+        "2026-09-24"
+      ],
+      "clicks": 14,
+      "impressions": 29,
+      "ctr": 0.4827586206896552,
+      "position": 1.6551724137931034
+    },
+    {
+      "keys": [
+        "2026-09-25"
+      ],
+      "clicks": 6,
+      "impressions": 54,
+      "ctr": 0.1111111111111111,
+      "position": 1.4444444444444444
+    },
+    {
+      "keys": [
+        "2026-09-26"
+      ],
+      "clicks": 5,
+      "impressions": 21,
+      "ctr": 0.23809523809523808,
+      "position": 11.523809523809524
+    },
+    {
+      "keys": [
+        "2026-09-27"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 4.1
+    },
+    {
+      "keys": [
+        "2026-09-28"
+      ],
+      "clicks": 8,
+      "impressions": 32,
+      "ctr": 0.25,
+      "position": 2.875
+    },
+    {
+      "keys": [
+        "2026-09-29"
+      ],
+      "clicks": 6,
+      "impressions": 20,
+      "ctr": 0.3,
+      "position": 2.65
     }
   ],
   "detailedRows": [
     {
-      "date": "2026-08-28",
-      "country": "ESP",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/",
-      "imp": 2,
-      "clicks": 2,
-      "pos": 1
+      "date": "2026-09-17",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 6,
+      "clicks": 6,
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/",
+      "date": "2026-09-02",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 5,
+      "clicks": 4,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-16",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 4,
+      "clicks": 4,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-08-25",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 3,
+      "clicks": 3,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-08-28",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 4,
+      "clicks": 3,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-08-30",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 3,
+      "clicks": 3,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-16",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 3,
+      "clicks": 3,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-23",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 4,
+      "clicks": 3,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-08-28",
+      "country": "esp",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-08-31",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 5,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-01",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 2,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-02",
+      "country": "rou",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-04",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 2,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-11",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 3,
       "clicks": 2,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/careers",
-      "imp": 4,
+      "date": "2026-09-14",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 2,
       "clicks": 2,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-26",
-      "country": "ARG",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/",
+      "date": "2026-09-14",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 3,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-15",
+      "country": "bra",
+      "device": "DESKTOP",
+      "imp": 3,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-15",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-16",
+      "country": "arg",
+      "device": "DESKTOP",
+      "imp": 3,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-17",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 3,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-22",
+      "country": "swe",
+      "device": "MOBILE",
+      "imp": 2,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-23",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 3,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-25",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 31,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-28",
+      "country": "lux",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 2,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompy",
+      "date": "2026-09-03",
+      "country": "jpn",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 1,
-      "pos": 1
+      "pos": 1,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-24",
-      "country": "ARG",
-      "device": "Mobile",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/",
-      "imp": 1,
-      "clicks": 1,
-      "pos": 1
-    },
-    {
       "date": "2026-08-20",
-      "country": "BGR",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/",
+      "country": "bgr",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 1,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "Brazil",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/",
+      "date": "2026-08-20",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 1,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "India",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/",
-      "imp": 1,
-      "clicks": 1,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "JPN",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/",
-      "imp": 1,
-      "clicks": 1,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-24",
-      "country": "MDA",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/",
-      "imp": 1,
-      "clicks": 1,
-      "pos": 1
-    },
-    {
       "date": "2026-08-22",
-      "country": "POL",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/",
+      "country": "pol",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 1,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-20",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/",
+      "date": "2026-08-24",
+      "country": "arg",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 1,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
+      "query": "qompyl",
+      "date": "2026-08-24",
+      "country": "mda",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-08-25",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
       "date": "2026-08-26",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/",
+      "country": "arg",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 1,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
+      "query": "qompyl",
+      "date": "2026-08-26",
+      "country": "jpn",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-08-26",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
       "date": "2026-08-27",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 1,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/",
+      "date": "2026-08-28",
+      "country": "bra",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-08-28",
+      "country": "ind",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-08-28",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-08-30",
+      "country": "bra",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-08-30",
+      "country": "gbr",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-08-30",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-08-31",
+      "country": "arg",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-01",
+      "country": "can",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-01",
+      "country": "gbr",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-01",
+      "country": "ind",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-01",
+      "country": "nld",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-01",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-02",
+      "country": "can",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-02",
+      "country": "ind",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-02",
+      "country": "ita",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-02",
+      "country": "rou",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-03",
+      "country": "arg",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-03",
+      "country": "can",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-03",
+      "country": "esp",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-03",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-03",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-03",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-04",
+      "country": "bra",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-04",
+      "country": "can",
+      "device": "MOBILE",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-05",
+      "country": "gbr",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-05",
+      "country": "zmb",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-06",
+      "country": "arg",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-06",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-06",
+      "country": "npl",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-07",
+      "country": "bra",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-07",
+      "country": "bra",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-07",
+      "country": "deu",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-08",
+      "country": "arg",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-08",
+      "country": "bra",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-08",
+      "country": "gbr",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-08",
+      "country": "ind",
+      "device": "DESKTOP",
       "imp": 4,
       "clicks": 1,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/",
+      "date": "2026-09-09",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 3,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-09",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 1,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/",
+      "date": "2026-09-10",
+      "country": "bgr",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 1,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/terms-of-service",
+      "date": "2026-09-10",
+      "country": "ind",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 1,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "SVN",
-      "device": "Desktop",
-      "type": "Non-Branded",
+      "query": "qompyl",
+      "date": "2026-09-10",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-10",
+      "country": "qat",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-10",
+      "country": "rou",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-11",
+      "country": "bra",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-11",
+      "country": "can",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-11",
+      "country": "jpn",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-13",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-15",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-15",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-16",
+      "country": "bra",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-16",
+      "country": "jpn",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-16",
+      "country": "pak",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-16",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-17",
+      "country": "arg",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-17",
+      "country": "bra",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-17",
+      "country": "jpn",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-17",
+      "country": "ken",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-18",
+      "country": "arg",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-18",
+      "country": "bgr",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-18",
+      "country": "ind",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-18",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-19",
+      "country": "can",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-19",
+      "country": "hkg",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-19",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-20",
+      "country": "arg",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-20",
+      "country": "prt",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-21",
+      "country": "arg",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-21",
+      "country": "bra",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-21",
+      "country": "chl",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-21",
+      "country": "ita",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-21",
+      "country": "rou",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-21",
+      "country": "svn",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-21",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 3,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-22",
+      "country": "deu",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-22",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-22",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-23",
+      "country": "arg",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-23",
+      "country": "ind",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-23",
+      "country": "jpn",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-23",
+      "country": "nga",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-23",
+      "country": "prt",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-23",
+      "country": "rou",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-24",
+      "country": "aut",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-24",
+      "country": "bra",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-24",
+      "country": "ind",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-24",
+      "country": "ind",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-24",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-24",
+      "country": "nga",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-24",
+      "country": "nld",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-24",
+      "country": "nld",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-24",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 3,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-24",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-25",
+      "country": "idn",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-25",
+      "country": "ind",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-25",
+      "country": "rou",
+      "device": "MOBILE",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-26",
+      "country": "bra",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-26",
+      "country": "can",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-26",
+      "country": "ind",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-26",
+      "country": "nld",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-26",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-28",
+      "country": "chn",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-28",
+      "country": "ind",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-28",
+      "country": "jpn",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-28",
+      "country": "nga",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-29",
+      "country": "arg",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-29",
+      "country": "chl",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-29",
+      "country": "dnk",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-29",
+      "country": "ind",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-29",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 1,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
       "query": "\"trusted by traders\" options alerts room",
-      "path": "/",
+      "date": "2026-08-25",
+      "country": "svn",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 11
+      "pos": 11,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Non-Branded",
       "query": "\"trusted by traders\" options alerts room",
-      "path": "/",
+      "date": "2026-08-25",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 2,
       "clicks": 0,
-      "pos": 12.5
+      "pos": 12.5,
+      "type": "Non-Branded"
     },
     {
+      "query": "\"trusted by traders\" options alerts room",
+      "date": "2026-08-25",
+      "country": "ven",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 0,
+      "pos": 13.5,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "\"trusted by traders\" options alerts room",
       "date": "2026-08-26",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Non-Branded",
-      "query": "\"trusted by traders\" options alerts room",
-      "path": "/",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 2,
       "clicks": 0,
-      "pos": 13
+      "pos": 13,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "VEN",
-      "device": "Desktop",
-      "type": "Non-Branded",
       "query": "\"trusted by traders\" options alerts room",
-      "path": "/",
+      "date": "2026-09-06",
+      "country": "ecu",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 7,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "\"trusted by traders\" options alerts room",
+      "date": "2026-09-06",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 2,
       "clicks": 0,
-      "pos": 13.5
+      "pos": 17.5,
+      "type": "Non-Branded"
     },
     {
+      "query": "\"trusted by traders\" options alerts room",
+      "date": "2026-09-07",
+      "country": "col",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 17,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "\"trusted by traders\" options alerts room",
+      "date": "2026-09-07",
+      "country": "grc",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 14,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "\"trusted by traders\" options alerts room",
+      "date": "2026-09-07",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 8,
+      "clicks": 0,
+      "pos": 16.625,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "\"trusted by traders\" options alerts room",
+      "date": "2026-09-08",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 0,
+      "pos": 14.5,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "\"trusted by traders\" options alerts room",
+      "date": "2026-09-10",
+      "country": "ind",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 0,
+      "pos": 22.5,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "\"trusted by traders\" options alerts room",
+      "date": "2026-09-10",
+      "country": "mar",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 12,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "\"trusted by traders\" options alerts room",
+      "date": "2026-09-10",
+      "country": "phl",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 19,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "\"trusted by traders\" options alerts room",
+      "date": "2026-09-10",
+      "country": "vnm",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 20,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "masayuki arai",
+      "date": "2026-09-27",
+      "country": "jpn",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 3,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "masayuki arai",
+      "date": "2026-09-28",
+      "country": "vnm",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 3,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qelp",
       "date": "2026-08-23",
-      "country": "GBR",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qelp",
-      "path": "/",
+      "country": "gbr",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 57
+      "pos": 57,
+      "type": "Non-Branded"
     },
     {
+      "query": "qelp",
       "date": "2026-08-27",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qelp",
-      "path": "/",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 52
+      "pos": 52,
+      "type": "Non-Branded"
     },
     {
+      "query": "qmatools",
+      "date": "2026-09-02",
+      "country": "rou",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 23,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qnoll",
+      "date": "2026-09-22",
+      "country": "isr",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 66,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qombal",
+      "date": "2026-09-01",
+      "country": "nld",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 10,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qombal",
+      "date": "2026-09-06",
+      "country": "ltu",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 0,
+      "pos": 4.5,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qombal",
+      "date": "2026-09-23",
+      "country": "nld",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 7,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qombil",
+      "date": "2026-09-05",
+      "country": "ind",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 2,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qombil",
+      "date": "2026-09-14",
+      "country": "gbr",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qombil",
+      "date": "2026-09-17",
+      "country": "deu",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 4,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qombol",
       "date": "2026-08-22",
-      "country": "ITA",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qombol",
-      "path": "/",
+      "country": "ita",
+      "device": "DESKTOP",
       "imp": 2,
       "clicks": 0,
-      "pos": 40
+      "pos": 40,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-26",
-      "country": "POL",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qombol",
-      "path": "/",
+      "date": "2026-08-26",
+      "country": "pol",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 32
+      "pos": 32,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-26",
-      "country": "SWE",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qombol",
-      "path": "/",
-      "imp": 1,
+      "date": "2026-08-26",
+      "country": "swe",
+      "device": "DESKTOP",
+      "imp": 3,
       "clicks": 0,
-      "pos": 28
+      "pos": 43,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-26",
-      "country": "SWE",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qombol",
-      "path": "/product",
+      "date": "2026-09-05",
+      "country": "ita",
+      "device": "DESKTOP",
       "imp": 2,
       "clicks": 0,
-      "pos": 50.5
+      "pos": 51.5,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-21",
-      "country": "AUS",
-      "device": "Desktop",
-      "type": "Non-Branded",
+      "query": "qombol",
+      "date": "2026-09-06",
+      "country": "dnk",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 22,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qombol",
+      "date": "2026-09-12",
+      "country": "ita",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 51,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qombol",
+      "date": "2026-09-13",
+      "country": "swe",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 28,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qombol",
+      "date": "2026-09-19",
+      "country": "ita",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 93,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qombol",
+      "date": "2026-09-23",
+      "country": "ita",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 0,
+      "pos": 70,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qombol",
+      "date": "2026-09-26",
+      "country": "ita",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 0,
+      "pos": 72,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qomboll",
+      "date": "2026-09-24",
+      "country": "irn",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 8,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qomol",
+      "date": "2026-09-11",
+      "country": "tur",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 9,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qomoviso",
+      "date": "2026-09-18",
+      "country": "nld",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 0,
+      "pos": 49.5,
+      "type": "Non-Branded"
+    },
+    {
       "query": "qomplx careers",
-      "path": "/careers",
+      "date": "2026-08-21",
+      "country": "aus",
+      "device": "DESKTOP",
       "imp": 2,
       "clicks": 0,
-      "pos": 40
+      "pos": 40,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Non-Branded",
+      "query": "qomply",
+      "date": "2026-09-05",
+      "country": "gbr",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 64,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qomply",
+      "date": "2026-09-10",
+      "country": "aus",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 52,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qomply",
+      "date": "2026-09-26",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 53,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qompol",
+      "date": "2026-09-08",
+      "country": "deu",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Non-Branded"
+    },
+    {
       "query": "qompy",
-      "path": "/",
+      "date": "2026-08-25",
+      "country": "jpn",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Non-Branded",
       "query": "qompy",
-      "path": "/product",
+      "date": "2026-09-20",
+      "country": "nld",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 10
+      "pos": 1,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-27",
-      "country": "ARG",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "IRL",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "NLD",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "PER",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
       "date": "2026-08-24",
-      "country": "ROU",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/",
+      "country": "rou",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
+      "query": "qompyl",
       "date": "2026-08-26",
-      "country": "ARG",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
+      "country": "jpn",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
+      "query": "qompyl",
       "date": "2026-08-27",
-      "country": "ARG",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
+      "country": "arg",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-24",
-      "country": "ARG",
-      "device": "Mobile",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/about",
+      "date": "2026-08-27",
+      "country": "per",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-20",
-      "country": "BGR",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
       "date": "2026-08-28",
-      "country": "Brazil",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
+      "country": "irl",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "ESP",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/about",
+      "date": "2026-08-28",
+      "country": "nld",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-01",
+      "country": "can",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-01",
+      "country": "dnk",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-01",
+      "country": "esp",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-02",
+      "country": "dnk",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-02",
+      "country": "esp",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-02",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-05",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-06",
+      "country": "idn",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-06",
+      "country": "ind",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-06",
+      "country": "rou",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-06",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-06",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-07",
+      "country": "arg",
+      "device": "DESKTOP",
       "imp": 2,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "India",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "IRL",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-25",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 3,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "JPN",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-24",
-      "country": "MDA",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "NLD",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "PER",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-22",
-      "country": "POL",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-24",
-      "country": "ROU",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-20",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 4,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "ARG",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "ARG",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-24",
-      "country": "ARG",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-20",
-      "country": "BGR",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "Brazil",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "ESP",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "India",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "IRL",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-25",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 3,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "JPN",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-24",
-      "country": "MDA",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "NLD",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "PER",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-22",
-      "country": "POL",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-24",
-      "country": "ROU",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-20",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/careers",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "ARG",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/coming-soon",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-24",
-      "country": "MDA",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/coming-soon",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-22",
-      "country": "POL",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/coming-soon",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/coming-soon",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "ARG",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/cookie-policy",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-24",
-      "country": "ARG",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/cookie-policy",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "ARG",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/early-access",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "ARG",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/early-access",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-24",
-      "country": "ARG",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/early-access",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-20",
-      "country": "BGR",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/early-access",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "Brazil",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/early-access",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "ESP",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/early-access",
+      "date": "2026-09-07",
+      "country": "rou",
+      "device": "DESKTOP",
       "imp": 2,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "India",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/early-access",
+      "date": "2026-09-08",
+      "country": "kaz",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "IRL",
-      "device": "Mobile",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/early-access",
+      "date": "2026-09-08",
+      "country": "per",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/early-access",
-      "imp": 3,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/early-access",
+      "date": "2026-09-08",
+      "country": "ury",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-26",
-      "country": "JPN",
-      "device": "Mobile",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/early-access",
+      "date": "2026-09-09",
+      "country": "arg",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-24",
-      "country": "MDA",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/early-access",
+      "date": "2026-09-09",
+      "country": "gbr",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "NLD",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/early-access",
+      "date": "2026-09-10",
+      "country": "usa",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-27",
-      "country": "PER",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/early-access",
+      "date": "2026-09-11",
+      "country": "arg",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-22",
-      "country": "POL",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/early-access",
+      "date": "2026-09-11",
+      "country": "rou",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-24",
-      "country": "ROU",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/early-access",
+      "date": "2026-09-12",
+      "country": "irl",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-20",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/early-access",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/early-access",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/early-access",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/early-access",
-      "imp": 4,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/early-access",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/early-access",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "JPN",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/policyes/privacy-policy",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/policyes/privacy-policy",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/policyes/privacy-policy",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-25",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/policyes/terms-of-service",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/policyes/terms-of-service",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "JPN",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/policyes/terms-of-service",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "PER",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/policyes/terms-of-service",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-24",
-      "country": "ROU",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/policyes/terms-of-service",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/policyes/terms-of-service",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/policyes/terms-of-service",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/policyes/terms-of-service",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "ARG",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "ARG",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-24",
-      "country": "ARG",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-20",
-      "country": "BGR",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "Brazil",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "ESP",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
+      "date": "2026-09-14",
+      "country": "arg",
+      "device": "DESKTOP",
       "imp": 2,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "India",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/product",
+      "date": "2026-09-14",
+      "country": "ind",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "IRL",
-      "device": "Mobile",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/product",
+      "date": "2026-09-15",
+      "country": "ind",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/product",
-      "imp": 3,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "JPN",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "JPN",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-24",
-      "country": "MDA",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "NLD",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "PER",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-22",
-      "country": "POL",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-24",
-      "country": "ROU",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-20",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-26",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-27",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 4,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/product",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-20",
-      "country": "BGR",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/terms-of-service",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "Brazil",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/terms-of-service",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "IRL",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/terms-of-service",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-20",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/terms-of-service",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 1
-    },
-    {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl",
-      "path": "/terms-of-service",
+      "date": "2026-09-19",
+      "country": "fra",
+      "device": "DESKTOP",
       "imp": 2,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/terms-of-service",
+      "date": "2026-09-19",
+      "country": "nga",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-24",
-      "country": "ARG",
-      "device": "Mobile",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/thank-you",
+      "date": "2026-09-20",
+      "country": "jpn",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "ESP",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/thank-you",
+      "date": "2026-09-20",
+      "country": "jpn",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "India",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/thank-you",
+      "date": "2026-09-21",
+      "country": "can",
+      "device": "DESKTOP",
+      "imp": 2,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-21",
+      "country": "jpn",
+      "device": "MOBILE",
+      "imp": 3,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-22",
+      "country": "arg",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "IRL",
-      "device": "Mobile",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/thank-you",
+      "date": "2026-09-22",
+      "country": "jpn",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "NLD",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/thank-you",
+      "date": "2026-09-22",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl",
-      "path": "/thank-you",
+      "date": "2026-09-23",
+      "country": "chl",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
+      "query": "qompyl",
+      "date": "2026-09-24",
+      "country": "arg",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-24",
+      "country": "can",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-24",
+      "country": "prt",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-25",
+      "country": "arg",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-25",
+      "country": "can",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-25",
+      "country": "egy",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-25",
+      "country": "mys",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-26",
+      "country": "arg",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-28",
+      "country": "arg",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-28",
+      "country": "arg",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl",
+      "date": "2026-09-28",
+      "country": "prt",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Branded"
+    },
+    {
+      "query": "qompyl company",
       "date": "2026-08-21",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl company",
-      "path": "/",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 2
+      "pos": 2,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-24",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl company",
-      "path": "/",
+      "date": "2026-08-24",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 2,
       "clicks": 0,
-      "pos": 1.5
+      "pos": 1.5,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl company",
-      "path": "/",
+      "date": "2026-08-25",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 3,
       "clicks": 0,
-      "pos": 1.3333333333333333
+      "pos": 1.3333333333333333,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-26",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl company",
-      "path": "/",
+      "date": "2026-08-26",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 2,
       "clicks": 0,
-      "pos": 1.5
+      "pos": 1.5,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-27",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl company",
-      "path": "/",
+      "date": "2026-08-27",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 4,
       "clicks": 0,
-      "pos": 1.25
+      "pos": 1.25,
+      "type": "Branded"
     },
     {
+      "query": "qompyl company",
       "date": "2026-08-27",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl company",
-      "path": "/",
+      "country": "usa",
+      "device": "MOBILE",
       "imp": 2,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
+      "query": "qompyl company",
       "date": "2026-08-28",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl company",
-      "path": "/",
+      "country": "usa",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-21",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl company",
-      "path": "/about",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 6
-    },
-    {
-      "date": "2026-08-24",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl company",
-      "path": "/about",
-      "imp": 2,
-      "clicks": 0,
-      "pos": 7
-    },
-    {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl company",
-      "path": "/about",
+      "date": "2026-08-31",
+      "country": "usa",
+      "device": "MOBILE",
       "imp": 3,
       "clicks": 0,
-      "pos": 5.333333333333333
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-26",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl company",
-      "path": "/about",
-      "imp": 2,
-      "clicks": 0,
-      "pos": 4.5
-    },
-    {
-      "date": "2026-08-27",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl company",
-      "path": "/about",
-      "imp": 4,
-      "clicks": 0,
-      "pos": 4.25
-    },
-    {
-      "date": "2026-08-27",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl company",
-      "path": "/about",
-      "imp": 2,
-      "clicks": 0,
-      "pos": 6
-    },
-    {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl company",
-      "path": "/about",
+      "date": "2026-09-01",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 6
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl company",
-      "path": "/careers",
+      "date": "2026-09-02",
+      "country": "usa",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 2
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-26",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl company",
-      "path": "/careers",
+      "date": "2026-09-03",
+      "country": "usa",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 2
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-27",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl company",
-      "path": "/careers",
+      "date": "2026-09-04",
+      "country": "usa",
+      "device": "MOBILE",
       "imp": 2,
       "clicks": 0,
-      "pos": 1.5
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-21",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl company",
-      "path": "/product",
+      "date": "2026-09-07",
+      "country": "usa",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 9
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-24",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl company",
-      "path": "/product",
+      "date": "2026-09-08",
+      "country": "bra",
+      "device": "DESKTOP",
       "imp": 2,
       "clicks": 0,
-      "pos": 9
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl company",
-      "path": "/product",
-      "imp": 2,
-      "clicks": 0,
-      "pos": 9
-    },
-    {
-      "date": "2026-08-26",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qompyl company",
-      "path": "/product",
+      "date": "2026-09-09",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 9
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-27",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Branded",
       "query": "qompyl company",
-      "path": "/product",
-      "imp": 2,
-      "clicks": 0,
-      "pos": 9
-    },
-    {
-      "date": "2026-08-27",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl company",
-      "path": "/product",
-      "imp": 2,
-      "clicks": 0,
-      "pos": 8
-    },
-    {
-      "date": "2026-08-28",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qompyl company",
-      "path": "/product",
+      "date": "2026-09-11",
+      "country": "bra",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 8
+      "pos": 1,
+      "type": "Branded"
     },
     {
-      "date": "2026-08-23",
-      "country": "SWE",
-      "device": "Mobile",
-      "type": "Non-Branded",
       "query": "qomvol",
-      "path": "/",
+      "date": "2026-08-23",
+      "country": "swe",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 3
+      "pos": 3,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-27",
-      "country": "United States",
-      "device": "Desktop",
-      "type": "Non-Branded",
       "query": "qoxmaosxlql",
-      "path": "/",
-      "imp": 1,
-      "clicks": 0,
-      "pos": 16
-    },
-    {
       "date": "2026-08-27",
-      "country": "Brazil",
-      "device": "Mobile",
-      "type": "Branded",
-      "query": "qpyl",
-      "path": "/",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 7
+      "pos": 16,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-29",
-      "country": "KOR",
-      "device": "Desktop",
-      "type": "Branded",
-      "query": "qpyl",
-      "path": "/",
+      "query": "qplum",
+      "date": "2026-09-06",
+      "country": "usa",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 5
+      "pos": 45,
+      "type": "Non-Branded"
     },
     {
+      "query": "qplum",
+      "date": "2026-09-22",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 52,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qpstol",
+      "date": "2026-09-07",
+      "country": "rus",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 94,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qpyl",
+      "date": "2026-08-27",
+      "country": "bra",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 7,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qpyl",
       "date": "2026-08-28",
-      "country": "MYS",
-      "device": "Mobile",
-      "type": "Branded",
+      "country": "mys",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Non-Branded"
+    },
+    {
       "query": "qpyl",
-      "path": "/",
+      "date": "2026-08-29",
+      "country": "kor",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 5,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-24",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Non-Branded",
+      "query": "qpyl",
+      "date": "2026-09-03",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 6,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qpyl",
+      "date": "2026-09-05",
+      "country": "usa",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 5,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qpyl",
+      "date": "2026-09-07",
+      "country": "can",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 4,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qpyl",
+      "date": "2026-09-28",
+      "country": "can",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "qpyl",
+      "date": "2026-09-29",
+      "country": "can",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 1,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "tyler charton",
+      "date": "2026-09-10",
+      "country": "rou",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 2,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "tyler charton",
+      "date": "2026-09-15",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 4,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "tyler charton",
+      "date": "2026-09-16",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 4,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "tyler charton",
+      "date": "2026-09-17",
+      "country": "arg",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 5,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "tyler charton",
+      "date": "2026-09-22",
+      "country": "jpn",
+      "device": "MOBILE",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 3,
+      "type": "Non-Branded"
+    },
+    {
+      "query": "tyler charton",
+      "date": "2026-09-23",
+      "country": "usa",
+      "device": "DESKTOP",
+      "imp": 1,
+      "clicks": 0,
+      "pos": 6,
+      "type": "Non-Branded"
+    },
+    {
       "query": "vincent capuano",
-      "path": "/team/vince-capuano",
+      "date": "2026-08-24",
+      "country": "usa",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 28
+      "pos": 28,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Non-Branded",
       "query": "when will they launch?",
-      "path": "/",
+      "date": "2026-08-25",
+      "country": "usa",
+      "device": "MOBILE",
       "imp": 1,
       "clicks": 0,
-      "pos": 1
+      "pos": 1,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Non-Branded",
-      "query": "when will they launch?",
-      "path": "/early-access",
+      "query": "where's the hq?",
+      "date": "2026-09-07",
+      "country": "jpn",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 2
+      "pos": 4,
+      "type": "Non-Branded"
     },
     {
-      "date": "2026-08-25",
-      "country": "United States",
-      "device": "Mobile",
-      "type": "Non-Branded",
-      "query": "when will they launch?",
-      "path": "/product",
+      "query": "代表者名は",
+      "date": "2026-09-17",
+      "country": "jpn",
+      "device": "DESKTOP",
       "imp": 1,
       "clicks": 0,
-      "pos": 4
+      "pos": 1,
+      "type": "Non-Branded"
     }
   ]
 }

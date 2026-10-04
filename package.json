@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@google-analytics/data": "^7.0.0",
+    "@googleapis/searchconsole": "^11.0.1",
     "@nuxtjs/supabase": "^2.0.10",
     "axios": "^1.20.0",
     "chart.js": "^4.5.1",
+    "google-auth-library": "^11.1.0",
     "googleapis": "^178.0.0",
     "lucide": "^1.38.0",
     "lucide-vue-next": "^1.0.0",

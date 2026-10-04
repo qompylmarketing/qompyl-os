@@ -5,13 +5,31 @@
       "sessions": 53,
       "rageClicks": 0,
       "deadClicks": 0,
-      "quickBacks": 8
+      "quickBacks": 11
     },
     "3": {
-      "sessions": 88,
+      "sessions": 83,
       "rageClicks": 0,
       "deadClicks": 0,
-      "quickBacks": 18
+      "quickBacks": 31
+    },
+    "7": {
+      "sessions": 185,
+      "rageClicks": 0,
+      "deadClicks": 0,
+      "quickBacks": 68
+    },
+    "14": {
+      "sessions": 390,
+      "rageClicks": 1,
+      "deadClicks": 0,
+      "quickBacks": 140
+    },
+    "30": {
+      "sessions": 820,
+      "rageClicks": 2,
+      "deadClicks": 1,
+      "quickBacks": 290
     }
   },
   "frictionLog": [],

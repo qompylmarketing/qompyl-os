@@ -4,12 +4,15 @@ import realData from '../../clarity-real-data.json'
 
 export default defineEventHandler((event) => {
   
-  // 1. التعامل مع الفترات الزمنية المفقودة (مثل 7 أيام) بحكمة
-  // إذا لم تكن البيانات موجودة في الملف، نعطي قيماً افتراضية حتى لا ينهار التطبيق
+ // في ملف server/api/clarity.js
+// استبدل كائن safeReports بالكامل بهذا الكود:
+
   const safeReports = {
-    '1': realData.reports && realData.reports['1'] ? realData.reports['1'] : { sessions: 0, rageClicks: 0, deadClicks: 0, quickBacks: 0 },
-    '3': realData.reports && realData.reports['3'] ? realData.reports['3'] : { sessions: 0, rageClicks: 0, deadClicks: 0, quickBacks: 0 },
-    '7': realData.reports && realData.reports['7'] ? realData.reports['7'] : { sessions: 0, rageClicks: 0, deadClicks: 0, quickBacks: 0 } 
+    '1': realData.reports?.['1'] || { sessions: 0, rageClicks: 0, deadClicks: 0, quickBacks: 0 },
+    '3': realData.reports?.['3'] || { sessions: 0, rageClicks: 0, deadClicks: 0, quickBacks: 0 },
+    '7': realData.reports?.['7'] || { sessions: 0, rageClicks: 0, deadClicks: 0, quickBacks: 0 },
+    '14': realData.reports?.['14'] || { sessions: 0, rageClicks: 0, deadClicks: 0, quickBacks: 0 },
+    '30': realData.reports?.['30'] || { sessions: 0, rageClicks: 0, deadClicks: 0, quickBacks: 0 }
   };
 
   // 2. الجداول السفلية (كما اتفقنا، هذه بيانات ثابتة للتصميم حالياً لحين ربطها بـ Supabase)

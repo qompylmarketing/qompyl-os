@@ -1,64 +1,136 @@
 {
   "accurateTotals": {
-    "activeUsers": 129,
-    "engagedSessions": 152,
-    "engagementRate": 0.7238095238095238,
-    "sessions": 210,
-    "keyEvents": 1
+    "activeUsers": 699,
+    "engagedSessions": 767,
+    "engagementRate": 0.6538789428815004,
+    "sessions": 1173,
+    "keyEvents": 8
   },
   "sourceData": [
     {
       "name": "(direct) / (none)",
-      "users": 80,
-      "engaged": 71,
+      "users": 397,
+      "engaged": 300,
       "leads": 0
     },
     {
       "name": "google / organic",
-      "users": 34,
-      "engaged": 48,
-      "leads": 1
+      "users": 188,
+      "engaged": 292,
+      "leads": 2
+    },
+    {
+      "name": "app.dover.com / referral",
+      "users": 23,
+      "engaged": 25,
+      "leads": 0
     },
     {
       "name": "linkedin.com / referral",
+      "users": 21,
+      "engaged": 20,
+      "leads": 1
+    },
+    {
+      "name": "wellfound.com / referral",
+      "users": 21,
+      "engaged": 20,
+      "leads": 1
+    },
+    {
+      "name": "bing / organic",
+      "users": 12,
+      "engaged": 7,
+      "leads": 0
+    },
+    {
+      "name": "(not set)",
+      "users": 10,
+      "engaged": 0,
+      "leads": 0
+    },
+    {
+      "name": "himalayas.app / himalayas.app",
+      "users": 10,
+      "engaged": 11,
+      "leads": 0
+    },
+    {
+      "name": "facebook.com / referral",
+      "users": 6,
+      "engaged": 5,
+      "leads": 0
+    },
+    {
+      "name": "chatgpt.com / ai-assistant",
+      "users": 5,
+      "engaged": 6,
+      "leads": 0
+    },
+    {
+      "name": "m.facebook.com / referral",
+      "users": 5,
+      "engaged": 0,
+      "leads": 0
+    },
+    {
+      "name": "BuiltIn / BuiltIn",
       "users": 4,
       "engaged": 3,
       "leads": 0
     },
     {
-      "name": "BuiltIn / BuiltIn",
-      "users": 2,
-      "engaged": 1,
-      "leads": 0
-    },
-    {
-      "name": "chatgpt.com / ai-assistant",
-      "users": 2,
+      "name": "hiringcafe.com / referral",
+      "users": 4,
       "engaged": 3,
       "leads": 0
     },
     {
-      "name": "app.dover.com / referral",
-      "users": 1,
-      "engaged": 1,
+      "name": "itjobs.pt / referral",
+      "users": 3,
+      "engaged": 3,
       "leads": 0
     },
     {
-      "name": "himalayas.app / himalayas.app",
+      "name": "workflow.layerx.jp / referral",
+      "users": 3,
+      "engaged": 4,
+      "leads": 0
+    },
+    {
+      "name": "l.facebook.com / referral",
+      "users": 2,
+      "engaged": 2,
+      "leads": 0
+    },
+    {
+      "name": "(data not available)",
       "users": 1,
       "engaged": 0,
       "leads": 0
     },
     {
-      "name": "hiringcafe.com / referral",
+      "name": "datadog.lightning.force.com / referral",
+      "users": 1,
+      "engaged": 2,
+      "leads": 0
+    },
+    {
+      "name": "gemini / ai-assistant",
       "users": 1,
       "engaged": 1,
       "leads": 0
     },
     {
-      "name": "m.facebook.com / referral",
+      "name": "hub.newfundcap.com / referral",
       "users": 1,
       "engaged": 0,
+      "leads": 0
+    },
+    {
+      "name": "lm.facebook.com / referral",
+      "users": 1,
+      "engaged": 1,
       "leads": 0
     },
     {
@@ -68,103 +140,240 @@
       "leads": 0
     },
     {
-      "name": "quantsresearch.atlassian.net / referral",
+      "name": "moneyshow.io / referral",
+      "users": 1,
+      "engaged": 2,
+      "leads": 0
+    },
+    {
+      "name": "perplexity.ai / ai-assistant",
       "users": 1,
       "engaged": 1,
+      "leads": 0
+    },
+    {
+      "name": "quantsresearch.atlassian.net / referral",
+      "users": 1,
+      "engaged": 2,
+      "leads": 0
+    },
+    {
+      "name": "search.google.com / referral",
+      "users": 1,
+      "engaged": 4,
       "leads": 0
     },
     {
       "name": "tagassistant.google.com / referral",
       "users": 1,
-      "engaged": 20,
-      "leads": 0
+      "engaged": 28,
+      "leads": 4
     },
     {
       "name": "webflow.com / referral",
       "users": 1,
-      "engaged": 1,
-      "leads": 0
-    },
-    {
-      "name": "wellfound.com / referral",
-      "users": 1,
-      "engaged": 1,
+      "engaged": 22,
       "leads": 0
     }
   ],
   "countryData": [
     {
       "name": "United States",
-      "users": 50,
+      "users": 293,
       "leads": 1
     },
     {
       "name": "Japan",
-      "users": 23,
+      "users": 66,
       "leads": 0
     },
     {
       "name": "India",
-      "users": 9,
-      "leads": 0
-    },
-    {
-      "name": "(not set)",
-      "users": 6,
-      "leads": 0
-    },
-    {
-      "name": "Argentina",
-      "users": 6,
+      "users": 57,
       "leads": 0
     },
     {
       "name": "Brazil",
-      "users": 6,
+      "users": 29,
+      "leads": 1
+    },
+    {
+      "name": "Canada",
+      "users": 26,
+      "leads": 0
+    },
+    {
+      "name": "Argentina",
+      "users": 23,
       "leads": 0
     },
     {
       "name": "Romania",
-      "users": 5,
+      "users": 23,
       "leads": 0
     },
     {
-      "name": "Bulgaria",
-      "users": 3,
-      "leads": 0
-    },
-    {
-      "name": "Canada",
-      "users": 2,
-      "leads": 0
-    },
-    {
-      "name": "Egypt",
-      "users": 2,
-      "leads": 0
-    },
-    {
-      "name": "Germany",
-      "users": 2,
-      "leads": 0
-    },
-    {
-      "name": "Poland",
-      "users": 2,
-      "leads": 0
-    },
-    {
-      "name": "Spain",
-      "users": 2,
+      "name": "(not set)",
+      "users": 19,
       "leads": 0
     },
     {
       "name": "United Kingdom",
-      "users": 2,
+      "users": 17,
+      "leads": 0
+    },
+    {
+      "name": "Germany",
+      "users": 12,
+      "leads": 0
+    },
+    {
+      "name": "Nigeria",
+      "users": 9,
+      "leads": 0
+    },
+    {
+      "name": "Portugal",
+      "users": 8,
+      "leads": 0
+    },
+    {
+      "name": "Bulgaria",
+      "users": 7,
+      "leads": 1
+    },
+    {
+      "name": "Kenya",
+      "users": 7,
+      "leads": 0
+    },
+    {
+      "name": "Indonesia",
+      "users": 6,
+      "leads": 0
+    },
+    {
+      "name": "Netherlands",
+      "users": 6,
+      "leads": 0
+    },
+    {
+      "name": "Poland",
+      "users": 6,
+      "leads": 0
+    },
+    {
+      "name": "France",
+      "users": 5,
+      "leads": 0
+    },
+    {
+      "name": "Singapore",
+      "users": 5,
+      "leads": 0
+    },
+    {
+      "name": "Türkiye",
+      "users": 5,
+      "leads": 0
+    },
+    {
+      "name": "Chile",
+      "users": 4,
       "leads": 0
     },
     {
       "name": "China",
+      "users": 4,
+      "leads": 0
+    },
+    {
+      "name": "Italy",
+      "users": 4,
+      "leads": 0
+    },
+    {
+      "name": "Pakistan",
+      "users": 4,
+      "leads": 0
+    },
+    {
+      "name": "Spain",
+      "users": 4,
+      "leads": 0
+    },
+    {
+      "name": "Austria",
+      "users": 3,
+      "leads": 0
+    },
+    {
+      "name": "Colombia",
+      "users": 3,
+      "leads": 0
+    },
+    {
+      "name": "Ireland",
+      "users": 3,
+      "leads": 0
+    },
+    {
+      "name": "Nepal",
+      "users": 3,
+      "leads": 0
+    },
+    {
+      "name": "Albania",
+      "users": 2,
+      "leads": 1
+    },
+    {
+      "name": "Egypt",
+      "users": 2,
+      "leads": 4
+    },
+    {
+      "name": "Hong Kong",
+      "users": 2,
+      "leads": 0
+    },
+    {
+      "name": "Malaysia",
+      "users": 2,
+      "leads": 0
+    },
+    {
+      "name": "Paraguay",
+      "users": 2,
+      "leads": 0
+    },
+    {
+      "name": "Sweden",
+      "users": 2,
+      "leads": 0
+    },
+    {
+      "name": "Uganda",
+      "users": 2,
+      "leads": 0
+    },
+    {
+      "name": "Ukraine",
+      "users": 2,
+      "leads": 0
+    },
+    {
+      "name": "Uruguay",
+      "users": 2,
+      "leads": 0
+    },
+    {
+      "name": "Vietnam",
+      "users": 2,
+      "leads": 0
+    },
+    {
+      "name": "Australia",
       "users": 1,
       "leads": 0
     },
@@ -174,12 +383,32 @@
       "leads": 0
     },
     {
-      "name": "France",
+      "name": "Czechia",
       "users": 1,
       "leads": 0
     },
     {
-      "name": "Malaysia",
+      "name": "Denmark",
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "name": "Estonia",
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "name": "Ghana",
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "name": "Luxembourg",
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "name": "Mexico",
       "users": 1,
       "leads": 0
     },
@@ -189,30 +418,155 @@
       "leads": 0
     },
     {
-      "name": "Nigeria",
+      "name": "Palestine",
       "users": 1,
       "leads": 0
     },
     {
-      "name": "Sweden",
+      "name": "Panama",
       "users": 1,
       "leads": 0
     },
     {
-      "name": "Uruguay",
+      "name": "Philippines",
       "users": 1,
       "leads": 0
     },
     {
-      "name": "Vietnam",
+      "name": "Qatar",
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "name": "Russia",
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "name": "Saudi Arabia",
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "name": "Serbia",
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "name": "Slovenia",
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "name": "South Africa",
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "name": "Trinidad & Tobago",
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "name": "Tunisia",
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "name": "Venezuela",
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "name": "Zambia",
       "users": 1,
       "leads": 0
     }
   ],
   "dateData": [
     {
+      "date": "20260916",
+      "users": 52,
+      "leads": 0
+    },
+    {
+      "date": "20260909",
+      "users": 43,
+      "leads": 0
+    },
+    {
+      "date": "20260917",
+      "users": 43,
+      "leads": 0
+    },
+    {
+      "date": "20260923",
+      "users": 42,
+      "leads": 0
+    },
+    {
+      "date": "20260924",
+      "users": 37,
+      "leads": 0
+    },
+    {
+      "date": "20260903",
+      "users": 36,
+      "leads": 4
+    },
+    {
+      "date": "20260925",
+      "users": 31,
+      "leads": 0
+    },
+    {
+      "date": "20260928",
+      "users": 30,
+      "leads": 1
+    },
+    {
+      "date": "20260901",
+      "users": 27,
+      "leads": 1
+    },
+    {
       "date": "20260826",
       "users": 25,
+      "leads": 0
+    },
+    {
+      "date": "20260926",
+      "users": 25,
+      "leads": 1
+    },
+    {
+      "date": "20260929",
+      "users": 25,
+      "leads": 0
+    },
+    {
+      "date": "20261002",
+      "users": 25,
+      "leads": 0
+    },
+    {
+      "date": "20260902",
+      "users": 24,
+      "leads": 0
+    },
+    {
+      "date": "20260921",
+      "users": 23,
+      "leads": 0
+    },
+    {
+      "date": "20260918",
+      "users": 22,
+      "leads": 0
+    },
+    {
+      "date": "20260906",
+      "users": 21,
       "leads": 0
     },
     {
@@ -221,7 +575,47 @@
       "leads": 0
     },
     {
+      "date": "20260911",
+      "users": 20,
+      "leads": 0
+    },
+    {
+      "date": "20260915",
+      "users": 20,
+      "leads": 0
+    },
+    {
+      "date": "20260922",
+      "users": 20,
+      "leads": 0
+    },
+    {
+      "date": "20260907",
+      "users": 19,
+      "leads": 0
+    },
+    {
+      "date": "20260910",
+      "users": 19,
+      "leads": 0
+    },
+    {
+      "date": "20260927",
+      "users": 19,
+      "leads": 0
+    },
+    {
+      "date": "20261001",
+      "users": 19,
+      "leads": 0
+    },
+    {
       "date": "20260824",
+      "users": 18,
+      "leads": 0
+    },
+    {
+      "date": "20260930",
       "users": 18,
       "leads": 0
     },
@@ -236,9 +630,39 @@
       "leads": 0
     },
     {
+      "date": "20260919",
+      "users": 16,
+      "leads": 0
+    },
+    {
       "date": "20260831",
       "users": 14,
       "leads": 1
+    },
+    {
+      "date": "20260914",
+      "users": 14,
+      "leads": 0
+    },
+    {
+      "date": "20260908",
+      "users": 13,
+      "leads": 0
+    },
+    {
+      "date": "20260920",
+      "users": 12,
+      "leads": 0
+    },
+    {
+      "date": "20260904",
+      "users": 10,
+      "leads": 0
+    },
+    {
+      "date": "20261003",
+      "users": 10,
+      "leads": 0
     },
     {
       "date": "20260821",
@@ -248,6 +672,16 @@
     {
       "date": "20260827",
       "users": 9,
+      "leads": 0
+    },
+    {
+      "date": "20260912",
+      "users": 9,
+      "leads": 0
+    },
+    {
+      "date": "20260905",
+      "users": 8,
       "leads": 0
     },
     {
@@ -271,6 +705,11 @@
       "leads": 0
     },
     {
+      "date": "20260913",
+      "users": 4,
+      "leads": 0
+    },
+    {
       "date": "20260829",
       "users": 3,
       "leads": 0
@@ -279,44 +718,176 @@
   "pageData": [
     {
       "path": "/",
-      "views": 187,
-      "users": 109,
+      "views": 954,
+      "users": 559,
       "leads": 0
     },
     {
       "path": "/about",
-      "views": 86,
-      "users": 45,
-      "leads": 0
-    },
-    {
-      "path": "/resources/position-sizing-turning-risk-per-trade-into-a-rule-you-can-backtest",
-      "views": 45,
-      "users": 6,
-      "leads": 0
-    },
-    {
-      "path": "/early-access",
-      "views": 41,
-      "users": 13,
+      "views": 504,
+      "users": 190,
       "leads": 0
     },
     {
       "path": "/careers",
-      "views": 36,
-      "users": 28,
+      "views": 265,
+      "users": 189,
       "leads": 0
     },
     {
       "path": "/product",
-      "views": 33,
-      "users": 23,
+      "views": 165,
+      "users": 118,
+      "leads": 0
+    },
+    {
+      "path": "/early-access",
+      "views": 113,
+      "users": 40,
       "leads": 0
     },
     {
       "path": "/team/tyler-charton",
-      "views": 15,
+      "views": 64,
+      "users": 36,
+      "leads": 0
+    },
+    {
+      "path": "/resources/position-sizing-turning-risk-per-trade-into-a-rule-you-can-backtest",
+      "views": 51,
+      "users": 9,
+      "leads": 0
+    },
+    {
+      "path": "/early-sign-up",
+      "views": 41,
+      "users": 12,
+      "leads": 0
+    },
+    {
+      "path": "/team/clark-vanscoder",
+      "views": 40,
+      "users": 25,
+      "leads": 0
+    },
+    {
+      "path": "/team/katie-milburn-mba",
+      "views": 40,
+      "users": 21,
+      "leads": 0
+    },
+    {
+      "path": "/untitled",
+      "views": 39,
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "path": "/team/martin-pinasco",
+      "views": 26,
+      "users": 11,
+      "leads": 0
+    },
+    {
+      "path": "/coming-soon",
+      "views": 24,
+      "users": 15,
+      "leads": 0
+    },
+    {
+      "path": "/team/zifri-baharudin-fca",
+      "views": 22,
+      "users": 14,
+      "leads": 0
+    },
+    {
+      "path": "/team/leandro-fravega",
+      "views": 20,
+      "users": 11,
+      "leads": 0
+    },
+    {
+      "path": "/team/luis-cecatto",
+      "views": 20,
       "users": 10,
+      "leads": 0
+    },
+    {
+      "path": "/team/miruna-spineanu",
+      "views": 20,
+      "users": 15,
+      "leads": 0
+    },
+    {
+      "path": "/team/matt-milburn-mms",
+      "views": 19,
+      "users": 10,
+      "leads": 0
+    },
+    {
+      "path": "/thank-you",
+      "views": 19,
+      "users": 7,
+      "leads": 8
+    },
+    {
+      "path": "/search",
+      "views": 18,
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "path": "/team/romina-lo-schiavo-ifdwn",
+      "views": 18,
+      "users": 12,
+      "leads": 0
+    },
+    {
+      "path": "/team/masayuki-arai",
+      "views": 17,
+      "users": 9,
+      "leads": 0
+    },
+    {
+      "path": "/terms-of-service",
+      "views": 17,
+      "users": 13,
+      "leads": 0
+    },
+    {
+      "path": "/team/claudia-ioana-muresan",
+      "views": 16,
+      "users": 13,
+      "leads": 0
+    },
+    {
+      "path": "/team/facundo-escobar",
+      "views": 16,
+      "users": 11,
+      "leads": 0
+    },
+    {
+      "path": "/team/kai-richardson",
+      "views": 16,
+      "users": 5,
+      "leads": 0
+    },
+    {
+      "path": "/team/dale-augustyn",
+      "views": 15,
+      "users": 9,
+      "leads": 0
+    },
+    {
+      "path": "/team/rebecca-menes",
+      "views": 15,
+      "users": 7,
+      "leads": 0
+    },
+    {
+      "path": "/team/vince-capuano",
+      "views": 15,
+      "users": 11,
       "leads": 0
     },
     {
@@ -326,139 +897,157 @@
       "leads": 0
     },
     {
-      "path": "/thank-you",
-      "views": 12,
-      "users": 4,
-      "leads": 1
-    },
-    {
-      "path": "/coming-soon",
-      "views": 10,
+      "path": "/team/vincent-roy",
+      "views": 13,
       "users": 8,
       "leads": 0
     },
     {
-      "path": "/team/katie-milburn-mba",
-      "views": 8,
-      "users": 7,
+      "path": "/team/william-silva",
+      "views": 13,
+      "users": 9,
       "leads": 0
     },
     {
-      "path": "/terms-of-service",
-      "views": 8,
-      "users": 7,
-      "leads": 0
-    },
-    {
-      "path": "/team/clark-vanscoder",
-      "views": 6,
-      "users": 5,
-      "leads": 0
-    },
-    {
-      "path": "/cookie-policy",
-      "views": 5,
-      "users": 3,
-      "leads": 0
-    },
-    {
-      "path": "/team/miruna-spineanu",
-      "views": 5,
-      "users": 4,
-      "leads": 0
-    },
-    {
-      "path": "/team/romina-lo-schiavo-ifdwn",
-      "views": 5,
-      "users": 3,
-      "leads": 0
-    },
-    {
-      "path": "/team/vince-capuano",
-      "views": 5,
-      "users": 3,
-      "leads": 0
-    },
-    {
-      "path": "/team/zifri-baharudin-fca",
-      "views": 5,
-      "users": 3,
-      "leads": 0
-    },
-    {
-      "path": "/team/luis-cecatto",
-      "views": 4,
-      "users": 3,
-      "leads": 0
-    },
-    {
-      "path": "/team/matt-andrews",
-      "views": 3,
-      "users": 3,
-      "leads": 0
-    },
-    {
-      "path": "/team/matt-milburn-mms",
-      "views": 3,
-      "users": 2,
-      "leads": 0
-    },
-    {
-      "path": "/team/ridvan-gyundogan",
-      "views": 3,
-      "users": 3,
-      "leads": 0
-    },
-    {
-      "path": "/privacy-policy",
-      "views": 2,
+      "path": "/resources",
+      "views": 12,
       "users": 1,
       "leads": 0
     },
     {
-      "path": "/team/claudia-ioana-muresan",
-      "views": 2,
-      "users": 2,
+      "path": "/team/nicolas-vrhovski",
+      "views": 11,
+      "users": 8,
       "leads": 0
     },
     {
-      "path": "/team/dale-augustyn",
-      "views": 2,
-      "users": 2,
+      "path": "/team/ridvan-gyundogan",
+      "views": 11,
+      "users": 8,
       "leads": 0
     },
     {
-      "path": "/team/facundo-escobar",
-      "views": 2,
-      "users": 2,
+      "path": "/team/marcos-dantas-guimaraes-filho",
+      "views": 10,
+      "users": 6,
       "leads": 0
     },
     {
-      "path": "/team/kai-richardson",
-      "views": 2,
-      "users": 2,
+      "path": "/cookie-policy",
+      "views": 9,
+      "users": 7,
+      "leads": 0
+    },
+    {
+      "path": "/team/edson-carlos",
+      "views": 9,
+      "users": 8,
+      "leads": 0
+    },
+    {
+      "path": "/privacy-policy",
+      "views": 8,
+      "users": 7,
+      "leads": 0
+    },
+    {
+      "path": "/team/matt-andrews",
+      "views": 7,
+      "users": 6,
+      "leads": 0
+    },
+    {
+      "path": "/team/melquisedeque-megas-damasceno",
+      "views": 5,
+      "users": 3,
       "leads": 0
     },
     {
       "path": "/contact",
+      "views": 3,
+      "users": 3,
+      "leads": 0
+    },
+    {
+      "path": "/risk-disclosure",
+      "views": 2,
+      "users": 2,
+      "leads": 0
+    },
+    {
+      "path": "/team",
+      "views": 2,
+      "users": 2,
+      "leads": 0
+    },
+    {
+      "path": "/(Edited)",
+      "views": 1,
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "path": "/careers/cloud-infrastructure-engineer",
+      "views": 1,
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "path": "/careers/full-stack-developer-part-time-equity-only",
+      "views": 1,
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "path": "/careers/join-our-talent-network-part-time-equity-only",
+      "views": 1,
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "path": "/case-studies",
+      "views": 1,
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "path": "/company",
+      "views": 1,
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "path": "/customers",
+      "views": 1,
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "path": "/investors",
+      "views": 1,
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "path": "/jobs",
+      "views": 1,
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "path": "/leadership",
+      "views": 1,
+      "users": 1,
+      "leads": 0
+    },
+    {
+      "path": "/press",
       "views": 1,
       "users": 1,
       "leads": 0
     },
     {
       "path": "/privacy",
-      "views": 1,
-      "users": 1,
-      "leads": 0
-    },
-    {
-      "path": "/team/nicolas-vrhovski",
-      "views": 1,
-      "users": 1,
-      "leads": 0
-    },
-    {
-      "path": "/untitled",
       "views": 1,
       "users": 1,
       "leads": 0

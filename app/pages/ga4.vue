@@ -13,7 +13,6 @@
       <!-- Filters -->
       <div class="filters-group" :class="{ 'disabled-filters': loading }">
         <div class="date-range-control">
-          <Icon name="calendar" :size="14" />
           <input type="date" v-model="filters.startDate" @change="applyFilters">
           <span class="date-arrow">→</span>
           <input type="date" v-model="filters.endDate" @change="applyFilters">
@@ -72,28 +71,28 @@
         <span class="score-title">Active Users</span>
         <div class="score-main">
           <p class="score-value">{{ data.kpis.users }}</p>
-          <span class="baseline-badge"><Icon name="minus" :size="12" /> Baseline Month 1</span>
+          <span class="baseline-badge"><Icon name="minus" :size="12" /> Selected Period</span>
         </div>
       </div>
       <div class="bento-card col-3 scorecard">
         <span class="score-title">Engaged Sessions</span>
         <div class="score-main">
           <p class="score-value">{{ data.kpis.engaged }}</p>
-          <span class="baseline-badge"><Icon name="minus" :size="12" /> Baseline Month 1</span>
+          <span class="baseline-badge"><Icon name="minus" :size="12" /> Selected Period</span>
         </div>
       </div>
       <div class="bento-card col-3 scorecard">
         <span class="score-title">Engagement Rate</span>
         <div class="score-main">
           <p class="score-value">{{ data.kpis.engagementRate }}%</p>
-          <span class="baseline-badge"><Icon name="minus" :size="12" /> Baseline Month 1</span>
+          <span class="baseline-badge"><Icon name="minus" :size="12" /> Selected Period</span>
         </div>
       </div>
       <div class="bento-card col-3 scorecard">
         <span class="score-title">Avg. Time</span>
         <div class="score-main">
           <p class="score-value">{{ data.kpis.avgTime }}</p>
-          <span class="baseline-badge"><Icon name="minus" :size="12" /> Baseline Month 1</span>
+          <span class="baseline-badge"><Icon name="minus" :size="12" /> Selected Period</span>
         </div>
       </div>
 
@@ -265,14 +264,15 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import GA4Charts from '~/components/GA4Charts.vue'
 import Icon from '~/components/Icon.vue'
 
+// 🚀 استدعاء Supabase
+const supabase = useSupabaseClient()
+
 const data = ref(null)
 const loading = ref(true)
 const openDropdown = ref(null)
 
-// 🚀 توليد التواريخ الديناميكية (آخر 30 يوماً)
+// 🚀 توليد تاريخ اليوم
 const today = new Date();
-const thirtyDaysAgo = new Date();
-thirtyDaysAgo.setDate(today.getDate() - 30);
 
 // دالة لتنسيق التاريخ إلى YYYY-MM-DD ليتوافق مع input type="date"
 const formatDateForInput = (dateObj) => {
@@ -282,10 +282,10 @@ const formatDateForInput = (dateObj) => {
   return `${year}-${month}-${day}`;
 };
 
-// 🚀 تعيين التواريخ الافتراضية
+// 🚀 تعيين التواريخ الافتراضية (من 1 أغسطس 2026 إلى اليوم)
 const filters = ref({
-  startDate: formatDateForInput(thirtyDaysAgo), 
-  endDate: formatDateForInput(today), 
+  startDate: '2026-08-01', // تثبيت البداية من أول أغسطس
+  endDate: formatDateForInput(today), // النهاية تتحدث تلقائياً لتاريخ اليوم
   channels: ['all'], 
   devices: ['all']
 })
@@ -346,18 +346,44 @@ function toggleDevice(value) {
 }
 
 async function applyFilters() {
-  loading.value = true; openDropdown.value = null
+  loading.value = true; openDropdown.value = null;
   try {
+    // 1. جلب بيانات GA4 من السيرفر
     const response = await $fetch('/api/ga4', {
       params: { startDate: filters.value.startDate, endDate: filters.value.endDate, channels: filters.value.channels.join(','), devices: filters.value.devices.join(',') }
-    })
-    data.value = response
-  } catch (error) { console.error(error) } finally { loading.value = false }
+    });
+    
+    // 2. جلب رقم الـ Leads الحقيقي من قاعدة البيانات (Supabase) لنفس الفترة
+    const { count: realLeadsCount } = await supabase
+      .from('leads')
+      .select('*', { count: 'exact', head: true })
+      .gte('created_at', new Date(filters.value.startDate).toISOString())
+      .lte('created_at', new Date(filters.value.endDate === formatDateForInput(new Date()) ? new Date() : filters.value.endDate).toISOString());
+
+    const realLeads = realLeadsCount || 0;
+
+    // 3. استبدال رقم GA4 (مثل 8) بالرقم الحقيقي في الكائن المستلم، وتحديث النسب
+    if (response && response.funnel) {
+      response.funnel.leads = realLeads; 
+      response.kpis.leads = realLeads;
+      // إعادة حساب النسب المئوية للـ Funnel بناءً على الرقم الجديد
+      response.funnel.rateLead = response.funnel.form > 0 ? ((realLeads / response.funnel.form) * 100).toFixed(1) : 0;
+      response.kpis.sessionKeyRate = response.funnel.sessions > 0 ? ((realLeads / response.funnel.sessions) * 100).toFixed(2) : 0;
+      response.insights.leadEngine = `Generated ${realLeads} Early Access registrations. Overall CVR is ${response.kpis.sessionKeyRate}%.`;
+    }
+
+    data.value = response;
+  } catch (error) { 
+    console.error(error);
+  } finally { 
+    loading.value = false;
+  }
 }
 
 function handleClickOutside(e) { if (!e.target.closest('.filter-dropdown')) openDropdown.value = null }
 onMounted(() => { document.addEventListener('click', handleClickOutside); applyFilters() })
 onUnmounted(() => { document.removeEventListener('click', handleClickOutside) })
+
 </script>
 
 <style scoped>

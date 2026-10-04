@@ -404,6 +404,7 @@ body {
   width: 100px;
   cursor: pointer;
   transition: all 0.2s;
+  width: 110px;
 }
 .date-range-control input[type="date"]:hover {
   color: #fff;

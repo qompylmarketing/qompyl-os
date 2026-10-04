@@ -6,7 +6,7 @@ const analyticsDataClient = new BetaAnalyticsDataClient({
 });
 
 const propertyId = '550697247'; 
-const dateRanges = [{ startDate: '2026-08-01', endDate: '2026-08-31' }];
+const dateRanges = [{ startDate: '2026-08-01', endDate: 'today' }];
 
 async function fetchAccurateGA4Data() {
   try {
